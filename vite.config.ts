@@ -1,5 +1,5 @@
-import vinext from "vinext";
 import { defineConfig } from "vite";
+import vinext from "vinext";
 import { sites } from "./build/sites-vite-plugin";
 
 const localBindingConfig = {
