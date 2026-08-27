@@ -1,0 +1,4403 @@
+[
+  {
+    "id": 1,
+    "question": "Which car has the right of way?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-001.png"
+  },
+  {
+    "id": 2,
+    "question": "Which car gives right of way?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-002.png"
+  },
+  {
+    "id": 3,
+    "question": "Which car should stop? (A traffic circle)",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-003.png"
+  },
+  {
+    "id": 4,
+    "question": "Which car gives right of way?",
+    "options": [
+      "Car B",
+      "Car C",
+      "Car A"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-004.png"
+  },
+  {
+    "id": 5,
+    "question": "Which car gives right of way?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-005.png"
+  },
+  {
+    "id": 6,
+    "question": "Which car is breaking the law assuming both are moving?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-006.png"
+  },
+  {
+    "id": 7,
+    "question": "The sign indicates:",
+    "options": [
+      "Hospital ahead.",
+      "End of speed restriction",
+      "Broken down vehicle ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-007.png"
+  },
+  {
+    "id": 8,
+    "question": "When approaching this sign, I should:",
+    "options": [
+      "Disengage gears.",
+      "Engage a lower gear",
+      "Apply hand brake"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-008.png"
+  },
+  {
+    "id": 9,
+    "question": "The sign indicates I am:",
+    "options": [
+      "Permitted to make a 'U' turn",
+      "Prohibited from making a 'U' turn",
+      "Prohibited from turning right"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-009.png"
+  },
+  {
+    "id": 10,
+    "question": "This sign indicates:",
+    "options": [
+      "Width restriction",
+      "Height restriction",
+      "Cattle ahead"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-010.png"
+  },
+  {
+    "id": 11,
+    "question": "At this sign I should:",
+    "options": [
+      "Stop, and only proceed when the road is clear on both sides",
+      "Stop, and only proceed when the road is clear on the right",
+      "Stop, and only proceed when the road is clear on the left"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-011.png"
+  },
+  {
+    "id": 12,
+    "question": "This sign indicates that I:",
+    "options": [
+      "May not park my vehicle",
+      "May park my vehicle",
+      "Expect 'Lay-by' ahead"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-012.png"
+  },
+  {
+    "id": 13,
+    "question": "A heavy vehicle may tow not more than:",
+    "options": [
+      "One trailer",
+      "Three trailers",
+      "Two trailers"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 14,
+    "question": "When carrying a passenger on my motorcycle, I must:",
+    "options": [
+      "Have headlamps fitted",
+      "Have the petrol tank filled",
+      "Have a pillion and foot rests firmly fixed"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 15,
+    "question": "If involved in a SERIOUS accident, I must:",
+    "options": [
+      "Report to a hospital",
+      "Report to police within 48 hours",
+      "Report to police as soon as possible, or within 24 hours."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 16,
+    "question": "When traveling behind another vehicle at night, I must:",
+    "options": [
+      "Dip my headlamps",
+      "Switch on my sidelights",
+      "Drive slowly"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 17,
+    "question": "When should a horn be used?",
+    "options": [
+      "To attract a friend's attention",
+      "When warning another road user.",
+      "When cattle are blocking the road ahead"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 18,
+    "question": "I may park no closer to a corner than:",
+    "options": [
+      "9.5 meters",
+      "15 meters",
+      "7.5 meters"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 19,
+    "question": "At an intersection with a flashing amber robot, I would:",
+    "options": [
+      "Wait until the road ahead is clear",
+      "Give right of way to vehicles from the left",
+      "Give right of way to vehicles from the right"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 20,
+    "question": "In which circumstances would I proceed against a red robot?",
+    "options": [
+      "When the green arrow is illuminated",
+      "When there is no approaching traffic",
+      "When the road is clear on the right"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 21,
+    "question": "Which is the correct robot light sequence?",
+    "options": [
+      "Red, Amber, Green",
+      "Red, Green, Amber",
+      "Green, Red, Amber"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 22,
+    "question": "A driver sees a continuous white line in the centre of the road, he or she",
+    "options": [
+      "May cross if there is no oncoming traffic",
+      "May not cross",
+      "May cross in rural areas"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 23,
+    "question": "A broken white line beside a continuous white line in the centre of the road indicates that:",
+    "options": [
+      "I may overtake if the continuous white line is on my side",
+      "I may overtake if the broken line is on my side",
+      "I must keep well left"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 24,
+    "question": "A broken yellow line on the left hand side of the road indicates:",
+    "options": [
+      "It may not be straddled",
+      "It may be straddled to overtake traffic which is turning right",
+      "It may be straddled to overtake cyclists"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 25,
+    "question": "What must you do when meeting a motor vehicle displaying 'L' plates?",
+    "options": [
+      "Hoot if the vehicle is blocking your path",
+      "Exercise extreme caution",
+      "Flash my headlights"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 26,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-026.png"
+  },
+  {
+    "id": 27,
+    "question": "Which car is breaking the law assuming vehicles are moving?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-027.png"
+  },
+  {
+    "id": 28,
+    "question": "This sign indicates?",
+    "options": [
+      "Railway station",
+      "Rail-road level crossing",
+      "An intersection"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-028.png"
+  },
+  {
+    "id": 29,
+    "question": "The driver may not park closer to the corner than:",
+    "options": [
+      "6.5m",
+      "7m",
+      "All of the above"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 30,
+    "question": "Cyclists should ride:",
+    "options": [
+      "As many as possible abreast",
+      "Two abreast",
+      "Single file."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 31,
+    "question": "When facing a red robot with an illuminated straight ahead Green arrow, I may:",
+    "options": [
+      "Proceed straight ahead",
+      "Turn right should I wish",
+      "Not proceed"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 32,
+    "question": "Which is the correct light sequence at a robot?",
+    "options": [
+      "Amber, Red, Green",
+      "Red, Amber, Green",
+      "Green, Red, Amber"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 33,
+    "question": "A continuous white line in the center of the road may:",
+    "options": [
+      "Be crossed if the road ahead is clear",
+      "Not be crossed for the purposes of overtaking",
+      "Be crossed only on highways"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 34,
+    "question": "Direction arrows used in conjunction with prohibition lines on a road surface:",
+    "options": [
+      "Are for information purposes only",
+      "Relate to taxi drivers only",
+      "Have a regulatory effect"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 35,
+    "question": "Which cars can move without breaking the law?",
+    "options": [
+      "Car A and Car C",
+      "Car B only",
+      "Both Car A and B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-035.png"
+  },
+  {
+    "id": 36,
+    "question": "I should always yield right of way to",
+    "options": [
+      "Ambulance and fire engine sounding a siren",
+      "Presidential motorcade",
+      "All of the above"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 37,
+    "question": "This sign indicates?",
+    "options": [
+      "Danger of stray animals",
+      "Danger of wild animals",
+      "Danger of farm animals"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-037.png"
+  },
+  {
+    "id": 38,
+    "question": "A solid yellow line on the left hand side of the road indicates:",
+    "options": [
+      "It may be straddled to overtake traffic which is turning right",
+      "It may be straddled to overtake cyclists",
+      "It may not be straddled"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 39,
+    "question": "This sign indicates?",
+    "options": [
+      "Hump ahead",
+      "Dip or ridge ahead",
+      "Mountains ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-039.png"
+  },
+  {
+    "id": 40,
+    "question": "This sign means that:",
+    "options": [
+      "Rail road level crossing ahead",
+      "Traffic lights and rail road crossing ahead",
+      "Traffic lights out of order"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-040.png"
+  },
+  {
+    "id": 41,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-041.png"
+  },
+  {
+    "id": 42,
+    "question": "Which car moves last at this intersection?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-042.png"
+  },
+  {
+    "id": 43,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-043.png"
+  },
+  {
+    "id": 44,
+    "question": "When traveling at 90km/h I must leave a gap of:",
+    "options": [
+      "Six vehicle lengths",
+      "Five vehicle lengths",
+      "Seven vehicle lengths"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 45,
+    "question": "When approaching a give way sign:",
+    "options": [
+      "I am obliged to stop before proceeding",
+      "I am obliged to give way to traffic approaching the intersection on my right only",
+      "I may proceed with caution and without stopping provided there is no other"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 46,
+    "question": "I must dip my headlamps:",
+    "options": [
+      "When approaching a railway level crossing.",
+      "When driving in a well lit area",
+      "When approaching an urban area"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 47,
+    "question": "In rural areas where traffic is not controlled, I should give precedence to:",
+    "options": [
+      "Traffic approaching from a road on the left.",
+      "Traffic approaching from a road on the right.",
+      "Traffic already in the intersection regardless of which side it is coming from"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 48,
+    "question": "The insignia of a warning sign is:",
+    "options": [
+      "A triangle",
+      "A circle",
+      "A rectangle"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 49,
+    "question": "When approaching a narrow bridge, I must pay attention to:",
+    "options": [
+      "Height restriction",
+      "Length restriction",
+      "Width restriction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 50,
+    "question": "At a robot-controlled intersection where you have stopped over the pedestrian crossing lines, what do",
+    "options": [
+      "Decide to carry on",
+      "Reverse the vehicle",
+      "Stay where you are"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 51,
+    "question": "Before driving a motor vehicle on a public road, it must have the following:",
+    "options": [
+      "Certificate of fitness and a repair card.",
+      "Learner's licence.",
+      "Registration book, insurance and a vehicle licence."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 52,
+    "question": "The correct sequence of a robot traffic light is:",
+    "options": [
+      "Amber, Green, Red.",
+      "Green, Amber, Red.",
+      "Red, Amber, Green"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 53,
+    "question": "When approaching a pedestrian crossing you should:",
+    "options": [
+      "Sound the horn.",
+      "Accelerate quickly over it.",
+      "Slow down and prepare to stop."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 54,
+    "question": "For cyclists not to interfere with other road users they should ride:",
+    "options": [
+      "Two to three abreast.",
+      "Single file.",
+      "Completely off the road."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 55,
+    "question": "A heavy vehicle towing independent trailers must have:",
+    "options": [
+      "Safety chains fitted to the trailers.",
+      "More pulling power.",
+      "As many spare wheels as possible."
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 56,
+    "question": "When approaching a slow moving combine harvester going in my direction of travel",
+    "options": [
+      "I increase speed and overtake it",
+      "I slow down and give it space to pass",
+      "I slow down and keep behind until its safe to overtake"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 57,
+    "question": "To drive a heavy vehicle you must have reached the age of:",
+    "options": [
+      "Nineteen years.",
+      "Eighteen years.",
+      "Seventeen years."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 58,
+    "question": "Which car moves second at this intersection?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-058.png"
+  },
+  {
+    "id": 59,
+    "question": "Which car moves first at this intersection?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-059.png"
+  },
+  {
+    "id": 60,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-060.png"
+  },
+  {
+    "id": 61,
+    "question": "This sign warns of:",
+    "options": [
+      "Cross road ahead.",
+      "Rail and level crossing ahead.",
+      "Stop or give way sign ahead."
+    ],
+    "correct": 2,
+    "image": "/question-images/q-061.png"
+  },
+  {
+    "id": 62,
+    "question": "At this sign I should:",
+    "options": [
+      "Stop and give way to traffic coming from my right.",
+      "Slow down and proceed if there is no crossing traffic.",
+      "Stop and proceed when the road is clear on both sides."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-062.png"
+  },
+  {
+    "id": 63,
+    "question": "This sign warns of:",
+    "options": [
+      "A mountainous area ahead.",
+      "A hump in the road ahead.",
+      "Large waves in the river ahead."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-063.png"
+  },
+  {
+    "id": 64,
+    "question": "This sign regulates that:",
+    "options": [
+      "Speed limit on this road is 60 km/h",
+      "Speed limit on this road is between 60 km/h and 80 km/h.",
+      "Speed limit on this road is 80 km/h"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-064.png"
+  },
+  {
+    "id": 65,
+    "question": "This sign is:",
+    "options": [
+      "A danger warning sign",
+      "A regulatory sign",
+      "An informative sign"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-065.png"
+  },
+  {
+    "id": 66,
+    "question": "This sign is:",
+    "options": [
+      "A carriageway marking.",
+      "An informative sign",
+      "A danger warning sign"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-066.png"
+  },
+  {
+    "id": 67,
+    "question": "The warning sign of a broken down vehicle is:",
+    "options": [
+      "The driver waving to the other road users.",
+      "The flashing of indicators.",
+      "The red reflective triangle."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 68,
+    "question": "On meeting an abnormal load vehicle under escort :",
+    "options": [
+      "I should slow down and exercise caution",
+      "I should sound my horn and flash my lights to alert him of my presence",
+      "I should do nothing"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 69,
+    "question": "When riding a motorcycle you must wear:",
+    "options": [
+      "A pair of cycle clips.",
+      "A pair of sun glasses.",
+      "A crash helmet"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 70,
+    "question": "When turning left at a robot controlled intersection I should :",
+    "options": [
+      "Yield to pedestrians to go through",
+      "Give right of way to traffic from the right",
+      "Sound the horn."
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 71,
+    "question": "When an oncoming vehicle lights are on bright beam, what do you do?",
+    "options": [
+      "Pull down the sun visor.",
+      "Slow down and look slightly to the left.",
+      "Switch spot lights on."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 72,
+    "question": "Which car stops?",
+    "options": [
+      "Car C",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-072.png"
+  },
+  {
+    "id": 73,
+    "question": "Which car goes last?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-073.png"
+  },
+  {
+    "id": 74,
+    "question": "In rural areas, where traffic is not controlled, you should give precedence to:",
+    "options": [
+      "Traffic from the road on the right.",
+      "To all crossing traffic.",
+      "Traffic already in the intersection regardless of which side it is coming from."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 75,
+    "question": "The minimum legal age at which an applicant can learn to drive is:",
+    "options": [
+      "Eighteen years old.",
+      "Any age.",
+      "Sixteen years old."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 76,
+    "question": "At an uncontrolled intersection, I should give right of way to:",
+    "options": [
+      "Oncoming traffic.",
+      "Traffic approaching from a road on the left.",
+      "Traffic approaching from a road on the right."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 77,
+    "question": "I may not overtake:",
+    "options": [
+      "On a blind rise.",
+      "When travelling on four lane traffic.",
+      "Near the post office."
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 78,
+    "question": "This sign indicates that",
+    "options": [
+      "Cyclists may not proceed beyond this",
+      "Both cyclists and pedestrians are prohibited beyond this sign.",
+      "Pedestrians find alternative route with their bicycles"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-078.png"
+  },
+  {
+    "id": 79,
+    "question": "At this sign I should:",
+    "options": [
+      "Stop, and wait until the road ahead is clear on both sides.",
+      "Give right of way to vehicles from the left",
+      "Give right of way to vehicles from the right"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-079.png"
+  },
+  {
+    "id": 80,
+    "question": "A yellow line on the left hand side of the road:",
+    "options": [
+      "May not be crossed under any circumstances.",
+      "May be crossed to overtake traffic which is turning to the right.",
+      "May be crossed to overtake slow traffic."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 81,
+    "question": "This sign means:",
+    "options": [
+      "Red Cross station ahead.",
+      "Cross road ahead.",
+      "Railway level crossing."
+    ],
+    "correct": 2,
+    "image": "/question-images/q-081.png"
+  },
+  {
+    "id": 82,
+    "question": "This sign means:",
+    "options": [
+      "Hospital ahead.",
+      "No entry.",
+      "Speed de-restriction."
+    ],
+    "correct": 2,
+    "image": "/question-images/q-082.png"
+  },
+  {
+    "id": 83,
+    "question": "This sign indicates, I may:",
+    "options": [
+      "Expect to find a 'Lay-By' ahead.",
+      "Park my vehicle.",
+      "Not park my vehicle."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-083.png"
+  },
+  {
+    "id": 84,
+    "question": "At this sign I would:",
+    "options": [
+      "Disengage gears.",
+      "Sound my hooter.",
+      "Proceed with caution and stop if necessary."
+    ],
+    "correct": 2,
+    "image": "/question-images/q-084.png"
+  },
+  {
+    "id": 85,
+    "question": "I must never change direction until I have:",
+    "options": [
+      "Flashed my headlamps.",
+      "Sounded my hooter.",
+      "Indicated my intention and ascertained that the road is clear."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 86,
+    "question": "I must take a habit of never setting my vehicle in motion until I have:",
+    "options": [
+      "Checked the rear view mirror.",
+      "Checked the petrol.",
+      "Checked for children and animals around."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 87,
+    "question": "Which car is not breaking the law?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-087.png"
+  },
+  {
+    "id": 88,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "None"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-088.png"
+  },
+  {
+    "id": 89,
+    "question": "Which car has right of way?",
+    "options": [
+      "Car B",
+      "Car A",
+      "The fastest"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-089.png"
+  },
+  {
+    "id": 90,
+    "question": "Which car has no right of way?",
+    "options": [
+      "Car A",
+      "Mercedes Benz",
+      "Car B"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-090.png"
+  },
+  {
+    "id": 91,
+    "question": "When filling my tank with petrol, I should:",
+    "options": [
+      "Engage in reverse gear.",
+      "Switch off the engine.",
+      "Close the choke."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 92,
+    "question": "When travelling at 75km/h I must leave a gap of:",
+    "options": [
+      "Four vehicle lengths.",
+      "Seven vehicle lengths",
+      "Five vehicle lengths"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 93,
+    "question": "When turning right at an intersection, I must :",
+    "options": [
+      "Hoot.",
+      "Give way to persons within the pedestrian crossing.",
+      "Give way to oncoming traffic"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 94,
+    "question": "I may dip my head lamps:",
+    "options": [
+      "When approaching a hospital.",
+      "When approaching a railway level crossing.",
+      "For oncoming traffic."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 95,
+    "question": "The general driving rule in Zimbabwe's highway code is",
+    "options": [
+      "Common sense",
+      "Drive on the left within your lane",
+      "Drive on the left beyond yellow line if there is congestion"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 96,
+    "question": "Which is not the correct robot light sequence?",
+    "options": [
+      "Red, Green, Amber",
+      "Green, Amber, Red.",
+      "Amber, Green, Red."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 97,
+    "question": "The correct position of a motor cycle on the road is",
+    "options": [
+      "Right of lane",
+      "Left of lane",
+      "Middle of lane."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 98,
+    "question": "The rider of a motor cycle has right to",
+    "options": [
+      "Use of a full lane",
+      "Overtake from any side as he or she wishes",
+      "Weaving in and out where road space permits"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 99,
+    "question": "A person riding a motorbike must wear",
+    "options": [
+      "Mine helmet",
+      "Any cap",
+      "A crash helmet"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 100,
+    "question": "When approaching this sign:",
+    "options": [
+      "I should not worry because it is not one of the known road signs",
+      "I am being warned the hazard ahead is of a variable nature",
+      "It is a surprise sign because you have just passed a hazard"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-100.png"
+  },
+  {
+    "id": 101,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 102,
+    "question": "Which car is not breaking the law?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-102.png"
+  },
+  {
+    "id": 103,
+    "question": "This sign indicates?",
+    "options": [
+      "Direction",
+      "4 way stop",
+      "A near-complete round about ahead"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-103.png"
+  },
+  {
+    "id": 104,
+    "question": "Driving instructor is exempted from wearing a safety belt",
+    "options": [
+      "When carrying learner drivers",
+      "When conducting driving lessons",
+      "Only when reversing"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 105,
+    "question": "A learner driver is allowed to carry passengers",
+    "options": [
+      "When he is in the company of qualified instructor",
+      "If the passengers are learner drivers",
+      "Never."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 106,
+    "question": "Which is the correct way to negotiate a right turn?",
+    "options": [
+      "Maintaining a firm position in the lane centre",
+      "Moving far to the right as possible within your lane",
+      "Moving far to the left as possible within your lane"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 107,
+    "question": "A double continuous white line with a broken line in the center of a road may:",
+    "options": [
+      "Be crossed if the road ahead is clear",
+      "Not be crossed.",
+      "Be crossed only on busy highways"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 108,
+    "question": "This road sign is",
+    "options": [
+      "For information purposes only",
+      "Related to trucks only",
+      "Of regulatory effect"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-108.png"
+  },
+  {
+    "id": 109,
+    "question": "Which car goes last?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-109.png"
+  },
+  {
+    "id": 110,
+    "question": "This road sign means",
+    "options": [
+      "Buses are being regulated",
+      "Buses are being warned",
+      "Buses are being informed"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-110.png"
+  },
+  {
+    "id": 111,
+    "question": "In which circumstances would a driver proceed against a red robot?",
+    "options": [
+      "Very late at night",
+      "When directed by a police officer",
+      "When there is a red filter arrow"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 112,
+    "question": "This road sign means",
+    "options": [
+      "Overtaking prohibited",
+      "Heavy goods vehicles may not overtake",
+      "Heavy goods vehicles may not overtake another goods vehicle"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-112.png"
+  },
+  {
+    "id": 113,
+    "question": "This road sign means",
+    "options": [
+      "Overtaking prohibited",
+      "Overtaking by light vehicles prohibited",
+      "Light vehicles may not overtake one another"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-113.png"
+  },
+  {
+    "id": 114,
+    "question": "To drive a public service vehicle one needs",
+    "options": [
+      "Registration book, defensive driving certificate and 5yrs driving experience",
+      "Defensive driving certificate, 5yrs driving experience & medical certificate",
+      "Defensive driving certificate, insurance and 5yrs driving experience"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 115,
+    "question": "Which car stops?",
+    "options": [
+      "Car B",
+      "Car C",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-115.png"
+  },
+  {
+    "id": 116,
+    "question": "Which car moves last at this intersection?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-116.png"
+  },
+  {
+    "id": 117,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-117.png"
+  },
+  {
+    "id": 118,
+    "question": "To drive an agricultural tractor in Zimbabwe, the minimum age required is:",
+    "options": [
+      "Sixteen years",
+      "Nineteen years.",
+      "Eighteen years."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 119,
+    "question": "When changing lanes you",
+    "options": [
+      "Signal, change lane, check blind spot",
+      "Signal, check blind spot, change lane",
+      "Change lane and signal after"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 120,
+    "question": "Hand signals should be used",
+    "options": [
+      "By learner drivers only",
+      "To emphasize the driver's intention",
+      "Only when turning right"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 121,
+    "question": "In Zimbabwe's Highway code the general rule is to",
+    "options": [
+      "Overtake on the right",
+      "Overtake from between lanes if possible",
+      "Overtake from which ever side is safer"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 122,
+    "question": "The colours of an 'L-plate' are",
+    "options": [
+      "White on red background",
+      "Red on yellow background",
+      "Red on white background"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 123,
+    "question": "When approaching a tunnel or a flyover, I must pay attention to:",
+    "options": [
+      "Height and length restriction",
+      "Height and width restriction",
+      "Height and weight restriction"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 124,
+    "question": "This road sign indicates:",
+    "options": [
+      "Weight restriction",
+      "Width restriction",
+      "Height restriction"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-124.png"
+  },
+  {
+    "id": 125,
+    "question": "You see a person being knocked unconscious in a road accident. What action do you take?",
+    "options": [
+      "Call the ambulance",
+      "Check for clear breathing",
+      "Report to the police as soon as possible"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 126,
+    "question": "When in a straight ahead lane at an intersection I am allowed to:",
+    "options": [
+      "Turn without indicating",
+      "Go straight",
+      "Change lanes without checking blind spots."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 127,
+    "question": "At a four way junction which car goes first?",
+    "options": [
+      "The car on the left",
+      "The car on the right",
+      "The first car to stop whether on the right or left"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 128,
+    "question": "A speed derestriction sign means I may:",
+    "options": [
+      "Do not exceed the stated speed",
+      "Exceed previous speed limit",
+      "Not exceed a speed of 130km/h"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 129,
+    "question": "When meeting a breakdown vehicle flashing its beacon lights I must:",
+    "options": [
+      "Pull off the road completely",
+      "Keep to the extreme left and pass as fast as possible.",
+      "Proceed with caution"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 130,
+    "question": "When I intend to stop on the road I must:",
+    "options": [
+      "Slow down check my rear view mirrors and stop.",
+      "Slow down, check mirror, indicate intention, pull off the road and stop",
+      "Flash my hazards and apply emergency brakes"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 131,
+    "question": "The position of a motor cyclist travelling on a highway in rural areas is",
+    "options": [
+      "Extreme left of lane",
+      "Centre of lane",
+      "Extreme right of lane"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 132,
+    "question": "When approaching an animal drawn vehicle I must:",
+    "options": [
+      "Blow my horn and pass",
+      "Slow down and pass on the safest side",
+      "Flash headlights and pass"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 133,
+    "question": "How many passengers are permitted to be carried by a motor cycle with a side car attached?",
+    "options": [
+      "Two",
+      "One",
+      "Three"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 134,
+    "question": "You may overtake:",
+    "options": [
+      "On a blind rise.",
+      "Where there is a continuous line and a broken line on your side",
+      "When there are two lanes going opposite directions."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 135,
+    "question": "What should you remember when approaching a pedestrian crossing?",
+    "options": [
+      "Maintain your speed at 60km/h",
+      "Prepare to stop regardless that there are no pedestrians",
+      "Increase speed so that you pass quickly"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 136,
+    "question": "A vehicle turning right should",
+    "options": [
+      "Give way to oncoming traffic proceeding straight",
+      "Give way to pedestrians leaving the pavement",
+      "Give way to cyclists going straight ahead"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 137,
+    "question": "A special medical certificate for public service vehicle drivers expires after:",
+    "options": [
+      "Twelve months",
+      "Eighteen months",
+      "Five years"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 138,
+    "question": "At the age of 17 years a person is allowed to drive",
+    "options": [
+      "Light motor vehicles only",
+      "Minibuses and light cars",
+      "Both heavy and light provided he/she is a holder of a class two driving licence"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 139,
+    "question": "A tractor drivers permit is issued to a person who is aged:",
+    "options": [
+      "18 and above before obtaining a licence",
+      "Anyone as and when it is required.",
+      "Above 20 years who is not a holder of any licence"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 140,
+    "question": "A 'one way' sign is:",
+    "options": [
+      "A danger warning sign",
+      "A parking sign",
+      "An informative sign"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 141,
+    "question": "Hazard perception means:",
+    "options": [
+      "Reading a traffic situation well in advance",
+      "Following police instructions as may be necessary",
+      "Obeying danger signs only."
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 142,
+    "question": "In well lit areas drivers are required to drive with",
+    "options": [
+      "Headlights on low beam and spot lights off.",
+      "Headlights on high beam and spot lights off",
+      "Headlights and stop lights off."
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 143,
+    "question": "A learner driver is exempted from wearing a safety belt",
+    "options": [
+      "When being driven by an instructor",
+      "When reversing",
+      "When driving at a constant speed of 60km/h"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 144,
+    "question": "Being the first at an accident scene, what are you expected to do?",
+    "options": [
+      "Observe from far away and contact V.I.D.",
+      "Render first aid and report to the nearest police.",
+      "Take pictures which will assist your report to the police."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 145,
+    "question": "At a give way sign",
+    "options": [
+      "You give right of way to vehicles from your right",
+      "Slow down and give right of way to all cross traffic",
+      "You stop and give right of way to all cross traffic"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 146,
+    "question": "A dualised carriageway means",
+    "options": [
+      "2 lanes in one direction",
+      "2 lanes in opposing directions with dividing strip",
+      "Wide lanes"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 147,
+    "question": "How far from a corner am I prohibited from parking my vehicle?",
+    "options": [
+      "7m",
+      "17.5m",
+      "7.5m"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 148,
+    "question": "When may one proceed against a one way sign?",
+    "options": [
+      "In any emergency",
+      "Never",
+      "When directed by police officer directing traffic"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 149,
+    "question": "Which car goes last?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-149.png"
+  },
+  {
+    "id": 150,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-150.png"
+  },
+  {
+    "id": 151,
+    "question": "Which car goes last?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-151.png"
+  },
+  {
+    "id": 152,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-152.png"
+  },
+  {
+    "id": 153,
+    "question": "When approaching this sign I should:",
+    "options": [
+      "Disengage gears.",
+      "Engage high gear",
+      "Engage a lower gear"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-153.png"
+  },
+  {
+    "id": 154,
+    "question": "When travelling behind another vehicle at night I must:",
+    "options": [
+      "Switch on my spot lights and sidelights",
+      "Switch on dipped headlights",
+      "Switch on my full beam"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 155,
+    "question": "You may legally block an intersection:",
+    "options": [
+      "When you enter the intersection on the green light",
+      "During rush hour traffic",
+      "Under no circumstances"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 156,
+    "question": "A transverse yield or stop line at a pedestrian crossing",
+    "options": [
+      "Has same effect",
+      "Has differing effect",
+      "Is for confusing the learner driver"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 157,
+    "question": "At an uncontrolled intersection which car is breaking the law?",
+    "options": [
+      "Car B",
+      "Car C",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 158,
+    "question": "Which of the following vehicles is not subject to carrying a fire extinguisher?",
+    "options": [
+      "A motor vehicle which is not yet registered",
+      "A public service vehicle which is not carrying passengers",
+      "A motor cycle"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 159,
+    "question": "A motor vehicle towing two trailers should carry",
+    "options": [
+      "6 breakdown triangles",
+      "3 breakdown triangles",
+      "2 breakdown triangles"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 160,
+    "question": "Breakdown triangles should be placed within",
+    "options": [
+      "20 - 45 meters from the nearest point of the breakdown vehicle",
+      "30 - 50 meters from the nearest point of the breakdown vehicle",
+      "25 - 60 meters from the nearest point of the breakdown vehicle"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 161,
+    "question": "To drive a motor omnibus you must have reached the age of",
+    "options": [
+      "Eighteen years.",
+      "Twenty years and medically fit",
+      "Twenty- five years"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 162,
+    "question": "Which car moves first at this intersection?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-162.png"
+  },
+  {
+    "id": 163,
+    "question": "At this sign",
+    "options": [
+      "Previous speed is cancelled",
+      "Stopping is prohibited",
+      "Speeding is restricted"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-163.png"
+  },
+  {
+    "id": 164,
+    "question": "When travelling at 75 km/h I must leave a gap of",
+    "options": [
+      "Four vehicle lengths.",
+      "Seven vehicle lengths",
+      "Five vehicle lengths"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 165,
+    "question": "Which car stops?",
+    "options": [
+      "Car C",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-165.png"
+  },
+  {
+    "id": 166,
+    "question": "Which of the following vehicles does not need reverse gears?",
+    "options": [
+      "A tractor towing two trailers",
+      "A motor cycle",
+      "A combine harvester in a field"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 167,
+    "question": "Which car is breaking the law?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-167.png"
+  },
+  {
+    "id": 168,
+    "question": "Into which grouping of road signs does this sign fall?",
+    "options": [
+      "A location sign",
+      "A direction sign",
+      "3 way road sign"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-168.png"
+  },
+  {
+    "id": 169,
+    "question": "This road sign",
+    "options": [
+      "Is for warning",
+      "Is for information",
+      "Has a regulatory effect"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-169.png"
+  },
+  {
+    "id": 170,
+    "question": "If involved in a serious accident I must",
+    "options": [
+      "Report to hospital within the next 24 hours",
+      "Report to police within 48 hours",
+      "Report to police as soon as possible, or within 24 hours."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 171,
+    "question": "This sign indicates",
+    "options": [
+      "Height restriction",
+      "Weight restriction",
+      "Speed restriction"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-171.png"
+  },
+  {
+    "id": 172,
+    "question": "Seeing this sign, I would",
+    "options": [
+      "Increase my speed if there is no congestion",
+      "Reduce speed",
+      "Park my car because the ground is wet"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-172.png"
+  },
+  {
+    "id": 173,
+    "question": "How many classes of driver's licences do we have in Zimbabwe?",
+    "options": [
+      "Five",
+      "Four",
+      "Six"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 174,
+    "question": "When driving at 120km/h your total stopping distance is?",
+    "options": [
+      "80 meters",
+      "100 meters",
+      "130 meters"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 175,
+    "question": "The reaction distance at 60km/h is?",
+    "options": [
+      "12.4 meters",
+      "5.6 meters",
+      "8.3 meters"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 176,
+    "question": "How many beer drinks should one consume before driving?",
+    "options": [
+      "One",
+      "Two",
+      "Never"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 177,
+    "question": "What do you do on hearing an ambulance approaching sounding special warning device?",
+    "options": [
+      "Move as fast as possible",
+      "Move out of its course and stop",
+      "Move slowly on the left side"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 178,
+    "question": "What time should persons driving on the road switch on their headlights?",
+    "options": [
+      "Between 5:30pm and 6:30am",
+      "Between 5:30am and 6:30pm",
+      "Any convenient time"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 179,
+    "question": "A pedal cyclist is allowed to carry a maximum weight of?",
+    "options": [
+      "90kg",
+      "40kg",
+      "25kg"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 180,
+    "question": "When you are driving and feel sleepy, what must you do?",
+    "options": [
+      "Maintain a slow speed",
+      "Move off the road and rest",
+      "Maintain a high speed"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 181,
+    "question": "At what speed must you approach a cross road, corner, bridge, sharp turn or steep descent?",
+    "options": [
+      "40km/h",
+      "60km/h",
+      "Safe speed"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 182,
+    "question": "This sign indicates",
+    "options": [
+      "Road narrows centrally",
+      "Road narrows to the right",
+      "Road narrows to the left"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-182.png"
+  },
+  {
+    "id": 183,
+    "question": "This sign warns of",
+    "options": [
+      "Side road ahead",
+      "Narrow bridge ahead",
+      "A grid ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-183.png"
+  },
+  {
+    "id": 184,
+    "question": "The maximum speed limit of heavy vehicles towing two trailers on wide tarred road is?",
+    "options": [
+      "80km/h",
+      "40km/h",
+      "120km/h"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 185,
+    "question": "Your steering wheel must not have more than ________ of free play?",
+    "options": [
+      "90 degrees",
+      "30 degrees",
+      "45 degrees"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 186,
+    "question": "Heavy vehicles should have the following reflectors",
+    "options": [
+      "White in front and red at the rear",
+      "White in front and amber at the rear",
+      "White in front and red and yellow chevron pattern at the rear"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 187,
+    "question": "This sign means",
+    "options": [
+      "Give way to cyclists",
+      "Cyclists to yield right of way",
+      "Danger of cyclists ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-187.png"
+  },
+  {
+    "id": 188,
+    "question": "Which car goes first?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-188.png"
+  },
+  {
+    "id": 189,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-189.png"
+  },
+  {
+    "id": 190,
+    "question": "Which car has right of way?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-190.png"
+  },
+  {
+    "id": 191,
+    "question": "This traffic light regulates that",
+    "options": [
+      "Traffic turning to the right may filter if the road is clear",
+      "Traffic turning to the left may filter if the road is clear",
+      "Traffic going straight may proceed if road is clear"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-191.png"
+  },
+  {
+    "id": 192,
+    "question": "Which statement is true about double prohibition lines?",
+    "options": [
+      "Can only be crossed if necessary",
+      "These lines may be crossed if the vehicle in front of you is moving slowly",
+      "Overtaking on this portion of the road is prohibited"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-192.png"
+  },
+  {
+    "id": 193,
+    "question": "When approaching a rail-road level crossing, what must you do?",
+    "options": [
+      "Increase speed",
+      "Maintain speed",
+      "Reduce speed and be ready to stop"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-193.png"
+  },
+  {
+    "id": 194,
+    "question": "What is the maximum speed limit on wide tar roads?",
+    "options": [
+      "There is no maximum speed limit",
+      "100km/h",
+      "120km/h"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 195,
+    "question": "Which car stops?",
+    "options": [
+      "Either of the two",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-195.png"
+  },
+  {
+    "id": 196,
+    "question": "What is the general speed limit in an urban area?",
+    "options": [
+      "40km/h",
+      "80km/h",
+      "60km/h"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 197,
+    "question": "This sign regulates that",
+    "options": [
+      "An about turn is prohibited",
+      "A right turn strictly prohibited",
+      "Previous U-turn permission cancelled"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-197.png"
+  },
+  {
+    "id": 198,
+    "question": "Which car has right of way?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Either A or B as long as it is safe to do so"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-198.png"
+  },
+  {
+    "id": 199,
+    "question": "What is the meaning of this sign?",
+    "options": [
+      "Cyclist prohibited beyond the sign",
+      "Motorists warned of presence of cyclist ahead",
+      "Road reserved for cyclists only."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-199.png"
+  },
+  {
+    "id": 200,
+    "question": "This sign warns of",
+    "options": [
+      "Children on road ahead",
+      "Road works ahead",
+      "Pedestrian crossing ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-200.png"
+  },
+  {
+    "id": 201,
+    "question": "When stopping a motor vehicle on a road except in traffic, where will you stop?",
+    "options": [
+      "On the extreme right of the road",
+      "On the extreme left of the road or in an authorized parking place",
+      "Stop in the middle if it is safe to do so"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 202,
+    "question": "At what age are cyclists not allowed to carry passengers?",
+    "options": [
+      "50 years",
+      "Over 18 years",
+      "Under 16 years"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 203,
+    "question": "Who is required to wear a crash helmet?",
+    "options": [
+      "Cyclists only",
+      "Motor cyclists only",
+      "Both of the above"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 204,
+    "question": "The insignia of a detour ahead warning sign is inside a",
+    "options": [
+      "A rectangle",
+      "A triangle",
+      "A circle"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 205,
+    "question": "Passengers disembarking from a bus should:",
+    "options": [
+      "Wait until the bus takes off and then cross the road",
+      "Cross the road from rear or front of the bus",
+      "Cross from whichever side is safe"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 206,
+    "question": "When approaching a flooded bridge what do you do?",
+    "options": [
+      "You can cross only when driving a heavy vehicle",
+      "Do not attempt to cross",
+      "Engage low gear and proceed slowly"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 207,
+    "question": "Which car goes first?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-207.png"
+  },
+  {
+    "id": 208,
+    "question": "What is the meaning of this sign?",
+    "options": [
+      "Stadium ahead",
+      "Warning presence of athletes",
+      "Soccer match"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-208.png"
+  },
+  {
+    "id": 209,
+    "question": "In an urban area, which car has the right of way?",
+    "options": [
+      "Car A",
+      "Car B",
+      "The one which enters the intersection first"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-209.png"
+  },
+  {
+    "id": 210,
+    "question": "Which is a possible sequence of a robot?",
+    "options": [
+      "Green, Red, filter arrow",
+      "Red, filter arrow, Green, Amber",
+      "Amber, Green, Red , filter arrow"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 211,
+    "question": "This sign regulates that:",
+    "options": [
+      "Vehicles should give right of way to cyclists",
+      "Cyclists should stop and give way to cross traffic",
+      "Stop and give way to cyclists from the right"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-211.png"
+  },
+  {
+    "id": 212,
+    "question": "This sign regulates that:",
+    "options": [
+      "Give right of way to motor cyclist",
+      "Motor cyclist prohibited",
+      "Motor cycles without a pillion seat prohibited"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-212.png"
+  },
+  {
+    "id": 213,
+    "question": "The sign warns of:",
+    "options": [
+      "Presence of wild animals crossing",
+      "Stray domestic animals crossing",
+      "All kinds of animals crossing"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-213.png"
+  },
+  {
+    "id": 214,
+    "question": "The sign warns of:",
+    "options": [
+      "Presence of people crossing the road ahead",
+      "Presence of friends crossing ahead",
+      "Presence of children ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-214.png"
+  },
+  {
+    "id": 215,
+    "question": "A driving school vehicle must have the following documents:",
+    "options": [
+      "'L-plates' and driving instructor certificate",
+      "Certificate of fitness and comprehensive vehicle insurance",
+      "Dual brakes and vehicle licence."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 216,
+    "question": "When approaching this sign I would:",
+    "options": [
+      "Be expected to check my vehicle",
+      "Slow down and expect to be stopped",
+      "Expect to see road works ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-216.png"
+  },
+  {
+    "id": 217,
+    "question": "This sign warns us of:",
+    "options": [
+      "Rail level crossing ahead",
+      "Physical barrier ahead",
+      "A grid ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-217.png"
+  },
+  {
+    "id": 218,
+    "question": "This sign is a:",
+    "options": [
+      "Danger warning sign.",
+      "A regulatory sign",
+      "An informative sign"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-218.png"
+  },
+  {
+    "id": 219,
+    "question": "When parked on such an incline:",
+    "options": [
+      "Engage lower gear, apply handbrake",
+      "Engage reverse, apply handbrake",
+      "Engage high gear and turn steering wheel torwards the curb"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-219.png"
+  },
+  {
+    "id": 220,
+    "question": "The lane you are travelling in suddenly end, in the setup below",
+    "options": [
+      "Road has been temporarily narrowed to the left",
+      "Road has been temporarily narrowed to the right",
+      "Road has been temporarily narrowed to the centre"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-220.png"
+  },
+  {
+    "id": 221,
+    "question": "At this sign I should:",
+    "options": [
+      "Slow down and proceed if there is no traffic",
+      "Slow down and give way to cross traffic",
+      "Stop and proceed when the road is clear on both sides."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-221.png"
+  },
+  {
+    "id": 222,
+    "question": "The sign warns of:",
+    "options": [
+      "Cross road ahead",
+      "Give way sign or stop sign ahead",
+      "Rail and level crossing ahead."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-222.png"
+  },
+  {
+    "id": 223,
+    "question": "A vehicle should be fitted with efficient reflectors of what colour?",
+    "options": [
+      "White at the front and red at the back",
+      "Amber at the front and red at the back",
+      "White at the front and amber at the back"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 224,
+    "question": "Which car moves second at this intersection?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-224.png"
+  },
+  {
+    "id": 225,
+    "question": "Warning reflective 'T' plate signs are fitted on a",
+    "options": [
+      "Towed trailer",
+      "Towed broken down motor vehicle",
+      "Drawing motor vehicle"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 226,
+    "question": "This sign means",
+    "options": [
+      "Bridge ahead",
+      "Dual carriage free way begins here",
+      "The road narrows ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-226.png"
+  },
+  {
+    "id": 227,
+    "question": "This sign is a:",
+    "options": [
+      "Sign of hard road ahead narrowing",
+      "Flyover bridge ahead",
+      "Sign that a single carriageway freeway begins here"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-227.png"
+  },
+  {
+    "id": 228,
+    "question": "This sign warns us of:",
+    "options": [
+      "Rail level crossing ahead",
+      "Traffic light presence ahead",
+      "Malfunctioning traffic light ahead"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-228.png"
+  },
+  {
+    "id": 229,
+    "question": "Which car is NOT breaking the law assuming all vehicles are moving?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-229.png"
+  },
+  {
+    "id": 230,
+    "question": "What does this sign warn of?",
+    "options": [
+      "Bad tarred road ahead",
+      "Road markings faded in the road ahead",
+      "Tarred road about to end and gravel road ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-230.png"
+  },
+  {
+    "id": 231,
+    "question": "When travelling in a bus:",
+    "options": [
+      "You can dispose your litter through the window",
+      "Dispose your litter under the seats",
+      "Hold on to your litter until you can dispose of it properly."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 232,
+    "question": "When stopping a motor vehicle on a road except in traffic, where will you stop?",
+    "options": [
+      "On the extreme right of the road",
+      "Stop in the middle if it is safe to do so",
+      "On the extreme left of the road or in an authorized parking place"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 233,
+    "question": "This sign warns of:",
+    "options": [
+      "Danger to the right rear wheel",
+      "Water pools in road ahead",
+      "Loose stones in road ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-233.png"
+  },
+  {
+    "id": 234,
+    "question": "Who is exempted from wearing a seat belt?",
+    "options": [
+      "Learner driver",
+      "Driving instructor",
+      "Ambulance driver during the course of work"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 235,
+    "question": "Which car goes first?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-235.png"
+  },
+  {
+    "id": 236,
+    "question": "At this sign I am",
+    "options": [
+      "Warned of accident ahead",
+      "Warned of black spot ahead",
+      "Warned of slippery road ahead"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-236.png"
+  },
+  {
+    "id": 237,
+    "question": "Which statement is appropriate?",
+    "options": [
+      "I may not wear a seatbelt where a vehicle has air bags",
+      "I should pull down the sun visor when dazzled by headlights",
+      "There is road signage to warn of possibility of congestion"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 238,
+    "question": "In an urban area, which car has NO right of way?",
+    "options": [
+      "Car A",
+      "The one which enters the intersection first",
+      "Car B"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-238.png"
+  },
+  {
+    "id": 239,
+    "question": "Which statement is true?",
+    "options": [
+      "We have speed limit for gravel roads",
+      "We have a clear legal driver's licence class for pedal cyclists.",
+      "Steering backlash not to exceed 12,5% of steering wheel circumference"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 240,
+    "question": "Which car moves FIRST at this intersection?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-240.png"
+  },
+  {
+    "id": 241,
+    "question": "Which statement is not appropriate?",
+    "options": [
+      "Motor cycles are exempted from being fitted with a rearview mirror",
+      "All motor vehicles must be fitted with rear view mirror(s)",
+      "Sun visors are mandatory for all motor vehicles"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 242,
+    "question": "This sign regulates that:",
+    "options": [
+      "No stopping",
+      "Hitch hiking allowed",
+      "Hitch hiking prohibited"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-242.png"
+  },
+  {
+    "id": 243,
+    "question": "The sign warns of:",
+    "options": [
+      "Width restriction warning",
+      "Width restriction of 15m",
+      "Warns of length restriction of 15m"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-243.png"
+  },
+  {
+    "id": 244,
+    "question": "This sign is:",
+    "options": [
+      "Seat reserved for disabled",
+      "Lane reseved for disabled",
+      "Parking for vehicles of disabled"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-244.png"
+  },
+  {
+    "id": 245,
+    "question": "Holding a class 4 & 5 driver's licence means I am qualified to drive:",
+    "options": [
+      "Agricultural tractor and small car",
+      "Small car and coupe imp",
+      "Small car and vintage vehicles"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 246,
+    "question": "This sign indicates that:",
+    "options": [
+      "Buses may reverse",
+      "Lane reserved for buses",
+      "Buses keep right"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-246.png"
+  },
+  {
+    "id": 247,
+    "question": "Which statement is true with regard to overtaking?",
+    "options": [
+      "You must overtake if visibility is bad",
+      "You must not overtake in the face of oncoming traffic",
+      "You are prohibited from overtaking at night"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 248,
+    "question": "This sign regulates that:",
+    "options": [
+      "Cutting corners prohibited",
+      "Left turn not allowed",
+      "Sharp curve no longer applies"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-248.png"
+  },
+  {
+    "id": 249,
+    "question": "Which rule is not true for pedal cyclists?",
+    "options": [
+      "Avoid towing or being towed",
+      "Sit only on the saddle of your cycle",
+      "Never worry about keeping both feet on the pedal"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 250,
+    "question": "Warning reflective T plates sign are fitted on a",
+    "options": [
+      "Towed trailer",
+      "Towed broken down motor vehicle",
+      "Drawing motor vehicle"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 251,
+    "question": "Which statement is not true?",
+    "options": [
+      "All road tests in Zimbabwe are strictly with manual vehicle",
+      "Heavy vehicles must have a net mass of 5000kg and above for road test purpose",
+      "Dual footbrake pedals may be required for driving school vehicles"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 252,
+    "question": "When approaching a give way sign:",
+    "options": [
+      "I am obliged to stop before proceeding",
+      "I am obliged to give way to traffic approaching the intersection on my right only",
+      "I may proceed with caution and without stopping provided there is no other approaching traffic"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 253,
+    "question": "Which statement is true?",
+    "options": [
+      "Pedestrians enjoy right of way only at a pedestrian crossing",
+      "A person pushing a wheelbarrow is a motorist",
+      "All motorists must be courteous to the old, disabled and children when using the roads"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 254,
+    "question": "In rural areas where traffic is not controlled, I should give precedence to:",
+    "options": [
+      "Traffic approaching from the road on the left",
+      "Traffic approaching from the road on the right",
+      "Traffic already in the intersection regardless of which side it is coming from."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 255,
+    "question": "During rainy weather",
+    "options": [
+      "Make sure a vehicle is fitted with good tyres",
+      "Good hand brake is important",
+      "Internal lights need to be functioning properly"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 256,
+    "question": "When approaching a narrow bridge, I must pay attention to:",
+    "options": [
+      "Height restriction",
+      "Length restriction",
+      "Width restriction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 257,
+    "question": "Whilst driving when do you take a mobile phone call?",
+    "options": [
+      "Once you have stopped in a legally permitted place",
+      "Whilst travelling in rural areas which do not have much traffic",
+      "If you are confident that your ability will not be compromised by the distraction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 258,
+    "question": "Which car stops?",
+    "options": [
+      "Car B",
+      "Car A"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-258.png"
+  },
+  {
+    "id": 259,
+    "question": "Which car is breaking the law if both are moving?",
+    "options": [
+      "Car B",
+      "Car C",
+      "Both cars"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-259.png"
+  },
+  {
+    "id": 260,
+    "question": "A car sun visor provides a shield against",
+    "options": [
+      "Sun glare",
+      "Street lights",
+      "Rain"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 261,
+    "question": "In which of the following situations should you never overtake cyclists?",
+    "options": [
+      "When approaching right hand bend",
+      "Immediately before making a left turn",
+      "On approach to a round about"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 262,
+    "question": "When in a straight ahead lane at an intersection I am not allowed to:",
+    "options": [
+      "Turn without indicating",
+      "Turn at all",
+      "Turn without checking blind spots",
+      "Turn without requesting"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 263,
+    "question": "On approaching a narrow bridge I am allowed to",
+    "options": [
+      "Flash my lights even for oncoming vehicles",
+      "Overtake slow moving vehicles",
+      "Slow down and proceed with caution."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 264,
+    "question": "A speed restriction sign means:",
+    "options": [
+      "Do not exceed the stated speed",
+      "Drive below the stated speed",
+      "Watch out for the police"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 265,
+    "question": "When I intend to stop on the road I must:",
+    "options": [
+      "Check blind spots and brake hard",
+      "Flash my hazard lights",
+      "Slow down, check the rear view mirror, pull off the road and stop"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 266,
+    "question": "At a rail level crossing with open booms a heavy vehicle driver should",
+    "options": [
+      "Quickly cross the railway",
+      "Stop, look both sides and cross when safe",
+      "Stop and look to the right"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 267,
+    "question": "The purpose of the parking brake is to",
+    "options": [
+      "Keep the vehicle stationary",
+      "Keep the vehicle stationary on a gradient only",
+      "Slow the vehicle down"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 268,
+    "question": "At a pedestrian crossing every driver must",
+    "options": [
+      "Wave the pedestrians through",
+      "Hoot when it is his turn to go",
+      "Wait patiently and proceed when appropriate"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 269,
+    "question": "Fog lights are to be used",
+    "options": [
+      "In dusty areas only",
+      "In heavy mist",
+      "At night"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 270,
+    "question": "A 'one way' sign is a",
+    "options": [
+      "Warning sign",
+      "Danger sign",
+      "Command sign"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 271,
+    "question": "All vehicles shall have",
+    "options": [
+      "Red reflectors in front",
+      "White reflectors in front",
+      "Either red or white reflectors in front"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 272,
+    "question": "When driving a motor vehicle at 06.00am the vehicle must have its headlights lit.",
+    "options": [
+      "Yes",
+      "No",
+      "Depends on day light"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 273,
+    "question": "In a traffic circle, I shall indicate",
+    "options": [
+      "When going out",
+      "When going in",
+      "When making a 'U' turn"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 274,
+    "question": "A vehicle turning right should",
+    "options": [
+      "Give way to window shopping pedestrians",
+      "Give way to oncoming traffic",
+      "Give way to pedestrians standing on the pavement."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 275,
+    "question": "What is the legal maximum speed on a Zimbabwean highway?",
+    "options": [
+      "120km/h for all vehicles",
+      "Between 80 and 120 km/h on all roads.",
+      "120km/h for light vehicles and 80km/h for heavy vehicles"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 276,
+    "question": "When you are temporarily parked by the side of the road at night, you are to leave",
+    "options": [
+      "Your headlights on bright beam",
+      "Your tail lights and side lights on.",
+      "Your headlamps on low beam"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 277,
+    "question": "When approaching an animal drawn vehicle",
+    "options": [
+      "You blow your horn and pass quickly",
+      "You flash your headlamps",
+      "You slow down and pass through the safer side"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 278,
+    "question": "You may overtake",
+    "options": [
+      "On a blind rise.",
+      "When there is a continuous white line",
+      "When there are two or more lanes going in the same direction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 279,
+    "question": "You may drive without a safety belt",
+    "options": [
+      "When you are driving slowly",
+      "When reversing",
+      "When you are driving very fast"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 280,
+    "question": "The hooter is used:",
+    "options": [
+      "To greet friends",
+      "In an emergency only",
+      "When there are animals in the road."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 281,
+    "question": "The sign indicates:",
+    "options": [
+      "Rainy weather ahead",
+      "Rainy area ahead",
+      "Reduced visibility in the road ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-281.png"
+  },
+  {
+    "id": 282,
+    "question": "When facing a red robot with an illuminated straight ahead Green arrow, I may:",
+    "options": [
+      "Proceed straight ahead",
+      "Turn right should I wish",
+      "Not proceed"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 283,
+    "question": "We use heavy gears when",
+    "options": [
+      "Going uphill",
+      "In muddy area only",
+      "Starting from rest only"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 284,
+    "question": "Which is not true if we need to save on fuel?",
+    "options": [
+      "Avoid heavy gears",
+      "Avoid very high speeds",
+      "Gears and speed have nothing to do with fuel consumption"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 285,
+    "question": "Vehicle pre-driving checks include",
+    "options": [
+      "Checking rear view mirrors are properly adjusted",
+      "Checking underneath and around the vehicle for animals and children",
+      "Making sure we have carried the registration book"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 286,
+    "question": "Which car(s) has/have the right of way in this traffic circle?",
+    "options": [
+      "Car A only",
+      "Car B only",
+      "Both Car A and B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-286.png"
+  },
+  {
+    "id": 287,
+    "question": "What must be avoided when raining?",
+    "options": [
+      "Driving at high speed",
+      "Reducing speed",
+      "Switching on wipers"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 288,
+    "question": "In which circumstances would I proceed against a red robot?",
+    "options": [
+      "When there is no approaching traffic",
+      "When the road is clear on the right",
+      "When the green arrow is illuminated"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 289,
+    "question": "A broken yellow line on the left hand side of the road indicates:",
+    "options": [
+      "It may be straddled to overtake traffic which is turning right",
+      "It may be straddled to overtake cyclists",
+      "It may not be straddled"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 290,
+    "question": "A motor vehicle may tow",
+    "options": [
+      "Any number of trailers",
+      "A vehicle of any size if it is able",
+      "A vehicle only if it has good brakes"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 291,
+    "question": "If involved in a serious accident, I must:",
+    "options": [
+      "Report to the police within 24 hours",
+      "Report to a hospital or fire brigade",
+      "Report to the police within 48 hours"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 292,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-292.png"
+  },
+  {
+    "id": 293,
+    "question": "Which car moves last at this intersection?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-293.png"
+  },
+  {
+    "id": 294,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-294.png"
+  },
+  {
+    "id": 295,
+    "question": "A clutch is used to:",
+    "options": [
+      "Increase vehicle speed",
+      "Decrease vehicle speed",
+      "Avoid noise when gear changing."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 296,
+    "question": "Diverging lanes means",
+    "options": [
+      "Two lanes becoming one",
+      "One lane becoming two",
+      "A road off a roundabout"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 297,
+    "question": "Hazard perception means",
+    "options": [
+      "Following directions of police officers",
+      "Obeying traffic signals",
+      "Reading a traffic situation in advance"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 298,
+    "question": "When you see a rabbit crossing the road in the rural areas, you:",
+    "options": [
+      "Increase speed to run it over",
+      "Reduce speed and stop when necessary",
+      "Flash your headlamps and hoot"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 299,
+    "question": "A weight restriction is usually associated with",
+    "options": [
+      "Bridges capacity on weight",
+      "Wet roads capacity on speed",
+      "Strip roads"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 300,
+    "question": "A blind spot on a road is a part of the road",
+    "options": [
+      "Directly in front of where the vehicle is moving towards",
+      "Not covered by rear view mirror",
+      "Where visibility is poor due to mist"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 301,
+    "question": "When a vehicle starts skidding, I should",
+    "options": [
+      "Brake harder",
+      "Increase speed",
+      "Release brakes"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 302,
+    "question": "You are going to reverse but you are not sure the area is clear. You should",
+    "options": [
+      "Assume it is clear and reverse anywhere",
+      "Check only the rear view mirrors",
+      "Get out of the car and check"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 303,
+    "question": "You come across stray animals on the road. You ..",
+    "options": [
+      "Flash your headlights when passing",
+      "Sound horn to alert them",
+      "Drive past slowly and give them plenty of room"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 304,
+    "question": "When towing caravan trailers safest mirrors to use are?",
+    "options": [
+      "Extended arm side mirrors",
+      "Interior wide angle mirrors",
+      "Ordinary mirrors"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 305,
+    "question": "When overtaking a bike rider in windy weather give more room because",
+    "options": [
+      "He may accelerate",
+      "He can be blown off course",
+      "He may not see you"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 306,
+    "question": "To facilitate easy movement going uphill you have to",
+    "options": [
+      "Select lower gear",
+      "Select highest gear",
+      "Accelerate"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 307,
+    "question": "Engine braking effect is felt when you",
+    "options": [
+      "Select low gear",
+      "Select neutral",
+      "You apply your handbrake"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 308,
+    "question": "When going down a long descent, keeping clutch down too long can cause",
+    "options": [
+      "More fuel consumption",
+      "Brake overheating",
+      "Car can loose control"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 309,
+    "question": "This sign indicates:",
+    "options": [
+      "Portion of road is set aside for pedestrians and pedal cyclists",
+      "Portion of road set aside for motor cyclists and pedestrians",
+      "Pedal cyclists and pedestrians should yield right of way"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-309.png"
+  },
+  {
+    "id": 310,
+    "question": "Labelling on abnormal load vehicle reads",
+    "options": [
+      "Abnormal vehicle",
+      "Abnormal load",
+      "Abnormal size vehicle"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 311,
+    "question": "Abnormal load vehicles",
+    "options": [
+      "Must have escort",
+      "May not have escort",
+      "Must have red flash beacon light"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 312,
+    "question": "You are waiting behind a cyclist at a traffic light. When it changes, you should..",
+    "options": [
+      "Beep your hooter a drive through before the cyclist does",
+      "Try to move before the cyclist does",
+      "Allow cyclist room and time to move"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 313,
+    "question": "The reaction distance increases because of ...",
+    "options": [
+      "Old age",
+      "Engine speed",
+      "Spongy brakes"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 314,
+    "question": "When approaching a traffic light that has been green for long",
+    "options": [
+      "Accelerate quickly",
+      "Maintain your speed",
+      "Be prepared to stop"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 315,
+    "question": "When should a cellphone be used during driving:",
+    "options": [
+      "In an emergency",
+      "When traffic density is low",
+      "Never"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 316,
+    "question": "This sign warns of:",
+    "options": [
+      "Dual carriageway ahead",
+      "Two way carriageway",
+      "One way street"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-316.png"
+  },
+  {
+    "id": 317,
+    "question": "When meeting a breakdown vehicle flashing its beacon light every driver must",
+    "options": [
+      "Pull off the road completely",
+      "Keep to the extreme left and pass as fast as possible",
+      "Slow down and proceed with caution."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 318,
+    "question": "How many passengers are allowed to be carried in a vehicle being driven by a learner driver?",
+    "options": [
+      "Two",
+      "The instructor and one other",
+      "No passengers"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 319,
+    "question": "What should be remembered when approaching a pedestrian crossing?",
+    "options": [
+      "Maintain constant speed",
+      "Pay special attention to pedestrians",
+      "Increase speed"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 320,
+    "question": "At the age of 17 years a person can drive motor vehicles classes of",
+    "options": [
+      "Heavy vehicles",
+      "Light motor vehicles",
+      "Agricultural tractors"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 321,
+    "question": "At night, in well lit areas, drivers should drive with",
+    "options": [
+      "Headlamps on high beam",
+      "Spot lights on",
+      "Headlamps on low beam"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 322,
+    "question": "An accident has just happened, you being the first at the scene, what are you expected to do?",
+    "options": [
+      "Render first aid and drive away",
+      "Render first aid and report to the nearest police",
+      "Observe from afar and phone the roads department."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 323,
+    "question": "When stopping a motor vehicle on a road except in traffic, where will you stop?",
+    "options": [
+      "On the extreme right of the road",
+      "Stop in the middle if it is safe to do so",
+      "On the extreme left of the road or in an authorized parking place"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 324,
+    "question": "When following a heavy box body goods vehicle, avoid following closely so as.",
+    "options": [
+      "To avoid thrown litter",
+      "To be seen by crossing animals",
+      "To allow safe overtaking and to be visible"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 325,
+    "question": "...to move forward from behind a parked vehicle?",
+    "options": [
+      "Apply signal",
+      "Use all the mirrors, exercise caution and drive off.",
+      "Just check your blind spot"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 326,
+    "question": "This traffic light regulates that:",
+    "options": [
+      "Traffic turning to the right may filter if the road is clear",
+      "Traffic turning to the left may filter if the road is clear",
+      "Traffic going straight may proceed if road is clear"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-326.png"
+  },
+  {
+    "id": 327,
+    "question": "Which statement is true about Double Prohibition lines?",
+    "options": [
+      "No vehicle may at anytime be driven on the left hand side of this line",
+      "Can not be crossed at anytime",
+      "No vehicle may at anytime be driven on the right hand side of this line"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-327.png"
+  },
+  {
+    "id": 328,
+    "question": "When approaching a level crossing, what must you do?",
+    "options": [
+      "Increase speed",
+      "Reduce speed and be ready to stop",
+      "Maintain speed"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-328.png"
+  },
+  {
+    "id": 329,
+    "question": "What is the maximum speed limit on wide tar roads?",
+    "options": [
+      "There is no maximum speed limit",
+      "100km/h",
+      "120km/h"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 330,
+    "question": "Which car stops?",
+    "options": [
+      "Either of the two",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-330.png"
+  },
+  {
+    "id": 331,
+    "question": "What is the general speed limit in an urban area?",
+    "options": [
+      "40km/h",
+      "80km/h",
+      "60km/h"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 332,
+    "question": "This sign regulates that:",
+    "options": [
+      "An about turn is prohibited",
+      "Roundabout ahead",
+      "Vehicles allowed to turn to the right only"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-332.png"
+  },
+  {
+    "id": 333,
+    "question": "When approaching this sign I should:",
+    "options": [
+      "Disengage gears.",
+      "Engage high gear",
+      "Engage lower gear"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-333.png"
+  },
+  {
+    "id": 334,
+    "question": "When travelling behind another vehicle at night I must:",
+    "options": [
+      "Switch on my spot lights and sidelights",
+      "Switch on dipped headlights",
+      "Switch on my full beam"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 335,
+    "question": "Which is the correct robot light sequence?",
+    "options": [
+      "Amber, Red, Green",
+      "Red, Amber, Green",
+      "Green, Red, Amber"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 336,
+    "question": "A continuous white line in the centre of the road:",
+    "options": [
+      "May cross if there is no oncoming traffic",
+      "May be crossed in a rural area and game parks",
+      "May not be crossed under any circumstances."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 337,
+    "question": "At this intersection which car would be breaking the law?",
+    "options": [
+      "Car B",
+      "Car C",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-337.png"
+  },
+  {
+    "id": 338,
+    "question": "Which of the following vehicles is not subject to carrying a fire extinguisher?",
+    "options": [
+      "A pedal cycle",
+      "A motor vehicle which is not yet registered",
+      "A public service vehicle which is not carrying passengers"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 339,
+    "question": "A motor vehicle towing two trailers should carry:",
+    "options": [
+      "6 breakdown triangles",
+      "3 breakdown triangles",
+      "2 breakdown triangles"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 340,
+    "question": "Breakdown triangles should be placed within",
+    "options": [
+      "20 - 45 meters from the nearest point of the breakdown vehicle",
+      "30 - 50 meters from the nearest point of the breakdown vehicle",
+      "25 - 60 meters from the nearest point of the breakdown vehicle"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 341,
+    "question": "To drive a Taxicab you must have reached at least the age of:",
+    "options": [
+      "Twenty years and medically fit",
+      "Twenty-five years and medically fit",
+      "Twenty-one years and medically fit"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 342,
+    "question": "Which car moves SECOND at this intersection?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-342.png"
+  },
+  {
+    "id": 343,
+    "question": "At a robot controlled intersection where you have stopped over pedestrian crossing lines, do you:",
+    "options": [
+      "Reverse the vehicle",
+      "Stay where you are",
+      "Decide to carry on in order not to obstruct"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 344,
+    "question": "When temporarily parked by the side of the road at night, one must leave:",
+    "options": [
+      "Your headlights on bright beam",
+      "Your tail lights and side lights on.",
+      "Your headlamps on low beam"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 345,
+    "question": "When approaching an animal drawn vehicle:",
+    "options": [
+      "You blow your horn and pass quickly",
+      "You flash your headlamps",
+      "You slow down and pass through the safer side"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 346,
+    "question": "You may overtake:",
+    "options": [
+      "On a blind rise.",
+      "When there is a continuous white line",
+      "When there are two or more lanes going in the same direction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 347,
+    "question": "You may drive without a safety belt:",
+    "options": [
+      "When you are driving slowly",
+      "When reversing",
+      "When you are driving very fast"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 348,
+    "question": "The hooter is only used:",
+    "options": [
+      "When there are animals in the road.",
+      "To greet friends",
+      "When brakes suddenly fail and there is an accident danger."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 349,
+    "question": "A weight restriction is usually associated with",
+    "options": [
+      "Bridges capacity on weight",
+      "Wet roads capacity on speed",
+      "Strip roads weight capacity"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 350,
+    "question": "A blind spot on a road is a part of the road",
+    "options": [
+      "Not covered by rear view mirror",
+      "Where visibility is poor due to mist",
+      "Directly in front of where the vehicle is moving towards"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 351,
+    "question": "When approaching this sign I am expected to:",
+    "options": [
+      "Engage brakes continuously",
+      "Engage low gear",
+      "Engage high gear"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-351.png"
+  },
+  {
+    "id": 352,
+    "question": "Which car goes first?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-352.png"
+  },
+  {
+    "id": 353,
+    "question": "At this sign I should:",
+    "options": [
+      "Stop and give way to cross traffic",
+      "Slow down and proceed if there is no traffic",
+      "Stop and proceed when the road is clear on both sides."
+    ],
+    "correct": 1,
+    "image": "/question-images/q-353.png"
+  },
+  {
+    "id": 354,
+    "question": "This sign warns of:",
+    "options": [
+      "Many vehicles following behind",
+      "A pile up accident",
+      "Possibility of congestion on road ahead"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-354.png"
+  },
+  {
+    "id": 355,
+    "question": "In case of a rear wheel tyre burst, I",
+    "options": [
+      "Apply foot brakes immediately",
+      "Avoid braking completely and control the steering whee",
+      "Do whatever comes to mind"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 356,
+    "question": "What are the colours of a private vehicle registration plates?",
+    "options": [
+      "Red on white background",
+      "Black on white background",
+      "Black on yellow background"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 357,
+    "question": "When travelling at high speed on a main road, I signal",
+    "options": [
+      "at least 50m before I turn",
+      "at least 100m before I turn",
+      "at least 7,5m before I turn"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 358,
+    "question": "Direction arrows used in conjunction with prohibition lines on a road surface:",
+    "options": [
+      "Are for information purposes only",
+      "Relate to taxi drivers only",
+      "Have a regulatory effect"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 359,
+    "question": "Which car stops?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-359.png"
+  },
+  {
+    "id": 360,
+    "question": "Which car moves last at this intersection?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 0,
+    "image": "/question-images/q-360.png"
+  },
+  {
+    "id": 361,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-361.png"
+  },
+  {
+    "id": 362,
+    "question": "A clutch is used to",
+    "options": [
+      "Increase vehicle speed",
+      "Decrease vehicle speed",
+      "Avoid noise when gear changing."
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 363,
+    "question": "Converging lanes means",
+    "options": [
+      "Two lanes becoming one",
+      "One lane becoming two",
+      "A road off a roundabout"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 364,
+    "question": "Hazard perception means",
+    "options": [
+      "Following directions of police officers",
+      "Obeying traffic signals",
+      "Reading a traffic situation in advance"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 365,
+    "question": "When you see an animal in the road you",
+    "options": [
+      "Increase speed to run it over",
+      "Reduce speed and stop when necessary",
+      "Flash your headlamps and hoot"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 366,
+    "question": "What is the incorrect sequence of a robot?",
+    "options": [
+      "Green, Red, Amber",
+      "Amber, Red, Green",
+      "Red, Green, Amber"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 367,
+    "question": "In an urban area, which car has the right of way?",
+    "options": [
+      "Car A",
+      "Car B",
+      "The one which enters the intersection first"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-367.png"
+  },
+  {
+    "id": 368,
+    "question": "Animal drawn vehicles must always have",
+    "options": [
+      "Proper working headlights",
+      "Working tail lights",
+      "Reins and a leader"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 369,
+    "question": "When stopping a motor vehicle on a road except in traffic, where will you stop?",
+    "options": [
+      "On the extreme right of the road",
+      "Stop in the middle if it is safe to do so",
+      "On the extreme left of the road or in an authorized parking place"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 370,
+    "question": "How far from a corner are you forbidden to stop your vehicle?",
+    "options": [
+      "7m",
+      "7.5m",
+      "10m"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 371,
+    "question": "When under the influence of drugs or alcohol what must you do?",
+    "options": [
+      "Drive slowly to a safe place",
+      "Stay off the road",
+      "Drive on the extreme left of the road"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 372,
+    "question": "The insignia of a command sign is:",
+    "options": [
+      "A triangle",
+      "A rectangle",
+      "A circle"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 373,
+    "question": "On which side must you overtake animals which are being led:",
+    "options": [
+      "Left hand side",
+      "Right hand side",
+      "Whichever side is safe"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 374,
+    "question": "What are the directions given by fixed or flashing amber robot at an intersection?",
+    "options": [
+      "Give precedence to all cross traffic",
+      "Give precedence to all vehicles coming from the right",
+      "Give precedence to vehicles coming from the left"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 375,
+    "question": "Which car goes first?",
+    "options": [
+      "Car A",
+      "Car B",
+      "Car C"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-375.png"
+  },
+  {
+    "id": 376,
+    "question": "When traveling at 60km/h, what distance should you leave between your vehicle and the vehicle in front?",
+    "options": [
+      "6 vehicle lengths",
+      "5 vehicle lengths",
+      "4 vehicle lengths"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 377,
+    "question": "When a fire engine, ambulance or police vehicle approaches sounding its special warning device, what",
+    "options": [
+      "Move as fast as possible",
+      "Move out of its course and stop",
+      "Move slowly on the left side"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 378,
+    "question": "What time should persons driving on the road switch on their headlights?",
+    "options": [
+      "Between 5:30pm and 6:30am",
+      "Between 5:30am and 6:30pm",
+      "Any convenient time"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 379,
+    "question": "If you are dazzled by the light of other vehicle, what must you do?",
+    "options": [
+      "Dip, get out of the way and slow down",
+      "Retaliate",
+      "Increase your speed"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 380,
+    "question": "When you are driving and feel sleepy, what must you do?",
+    "options": [
+      "Maintain a slow speed",
+      "Move off the road and rest",
+      "Maintain a high speed"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 381,
+    "question": "All vehicles shall have:",
+    "options": [
+      "Red reflectors in front",
+      "White reflectors in front",
+      "Either red or white reflectors in front"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 382,
+    "question": "The law says when driving a motor vehicle at 6.00am the vehicle must have its headlights lit:",
+    "options": [
+      "Yes",
+      "No",
+      "Depends on day light"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 383,
+    "question": "In a traffic circle, I shall indicate:",
+    "options": [
+      "When going out",
+      "When going in",
+      "When making a 'U' turn"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 384,
+    "question": "A vehicle turning right should",
+    "options": [
+      "Give way to window shopping pedestrians",
+      "Give way to oncoming traffic",
+      "Give way to pedestrians standing on the pavement."
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 385,
+    "question": "What is the legal maximum speed on a Zimbabwean Highway?",
+    "options": [
+      "120km/h for all vehicles",
+      "Between 80 and 120 km/h on all roads.",
+      "120km/h for light vehicles and 80km/h for heavy vehicles"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 386,
+    "question": "Which car goes last?",
+    "options": [
+      "Car B",
+      "Car A",
+      "Car C"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-386.png"
+  },
+  {
+    "id": 387,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car B",
+      "Car A"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-387.png"
+  },
+  {
+    "id": 388,
+    "question": "What must you do before you change direction?",
+    "options": [
+      "Signal my intention when turning left only",
+      "Signal my intention when turning right only",
+      "Signal my intention before acting and see that the road is clear before changing direction"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 389,
+    "question": "This sign regulates:",
+    "options": [
+      "Time restriction",
+      "Speed restriction",
+      "Weight restriction"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-389.png"
+  },
+  {
+    "id": 390,
+    "question": "This sign regulates that:",
+    "options": [
+      "Vehicles should give precedence to traffic oncoming from the road on the right",
+      "Vehicles should give precedence to traffic coming from the left",
+      "Vehicles should give precedence to all cross traffic"
+    ],
+    "correct": 2,
+    "image": "/question-images/q-390.png"
+  },
+  {
+    "id": 391,
+    "question": "When travelling at 75km/h I must leave a gap of:",
+    "options": [
+      "Four vehicle lengths.",
+      "Seven vehicle lengths",
+      "Five vehicle lengths"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 392,
+    "question": "Which car goes last?",
+    "options": [
+      "Car C",
+      "Car A",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-392.png"
+  },
+  {
+    "id": 393,
+    "question": "Which car gives right of way?",
+    "options": [
+      "Car A",
+      "Car C",
+      "Car B"
+    ],
+    "correct": 1,
+    "image": "/question-images/q-393.png"
+  },
+  {
+    "id": 394,
+    "question": "When in a straight ahead lane at an intersection I am not allowed to:",
+    "options": [
+      "Turn without indicating",
+      "Turn at all",
+      "Turn without requesting",
+      "Turn without checking blind spots"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 395,
+    "question": "At a bridge, I am not allowed to:",
+    "options": [
+      "Overtake slow moving vehicles",
+      "Slow down and check the road ahead",
+      "Dip my lights even for oncoming vehicles"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 396,
+    "question": "A speed restriction sign means:",
+    "options": [
+      "Do not exceed the stated speed",
+      "Drive below the stated speed",
+      "Do not exceed the stated speed"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 397,
+    "question": "When I intend to stop on the road I must:",
+    "options": [
+      "Flash my hazard lights",
+      "Slow down and stop",
+      "Slow down, check the rear view mirror and stop"
+    ],
+    "correct": 2,
+    "image": null
+  },
+  {
+    "id": 398,
+    "question": "At a rail level crossing with open booms a driver should",
+    "options": [
+      "Quickly cross the railway",
+      "Look both sides and cross",
+      "Stop and look to the right"
+    ],
+    "correct": 1,
+    "image": null
+  },
+  {
+    "id": 399,
+    "question": "The purpose of the parking brake is to",
+    "options": [
+      "Keep the vehicle stationary",
+      "Keep the vehicle stationary on a gradient only",
+      "Slow the vehicle down"
+    ],
+    "correct": 0,
+    "image": null
+  },
+  {
+    "id": 400,
+    "question": "At a pedestrian cross every driver must",
+    "options": [
+      "Wave the pedestrians through",
+      "Hoot when it is his turn to go",
+      "Wait patiently and proceed when appropriate"
+    ],
+    "correct": 2,
+    "image": null
+  }
+]
