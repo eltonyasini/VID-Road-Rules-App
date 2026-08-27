@@ -20,7 +20,7 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
-    base: "/driving-app/",
+    base: "/VID-Road-Rules-App/",
 
     server: {
       host: "0.0.0.0",
