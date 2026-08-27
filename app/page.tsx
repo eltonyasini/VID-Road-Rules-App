@@ -354,7 +354,7 @@ export default function Home() {
           {question.image && (
             <div className="image-stage">
               <img
-                src={question.image}
+                src={`${import.meta.env.BASE_URL}${question.image?.replace(/^\/+/, "")}`}
                 alt={`Road diagram for question ${question.id}`}
               />
             </div>
