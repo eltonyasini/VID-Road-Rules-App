@@ -189,7 +189,7 @@ export default function Home() {
           <h1>How do you want to practise?</h1>
           <p className="menu-intro">
             Work through the questions in smaller sets, create a random test,
-            or take on every question from the PDF.
+            or take on all 400 questions.
           </p>
         </header>
 
@@ -235,7 +235,7 @@ export default function Home() {
               <p className="mode-tag">MIX IT UP</p>
               <h2>Random 25</h2>
               <p>
-                Generate a fresh mix of 25 questions from anywhere in the PDF.
+                Test yourself with a fresh mix of 25 randomly selected questions.
               </p>
             </div>
             <button className="mode-button random-button" onClick={startRandom}>
