@@ -216,6 +216,22 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function confirmExit() {
+    // A finished quiz can return to the menu without a warning.
+    if (session.phase === "results") {
+      goToMenu();
+      return;
+    }
+
+    const wantsToExit = window.confirm(
+      "Are you sure you want to exit? Your current quiz progress will be lost.",
+    );
+
+    if (wantsToExit) {
+      goToMenu();
+    }
+  }
+
   function goToMenu() {
     setSession(emptySession);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -318,7 +334,7 @@ export default function Home() {
           <p className="eyebrow">VID PRACTICE · {modeTitle.toUpperCase()}</p>
           <h1>Road Rules</h1>
         </div>
-        <button className="text-button" onClick={goToMenu} type="button">
+        <button className="text-button" onClick={confirmExit} type="button">
           Exit quiz
         </button>
       </header>
