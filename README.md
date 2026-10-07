@@ -75,7 +75,6 @@ Windows users can also double-click `START-WINDOWS.bat`. It installs packages wi
 | `public/favicon.svg` | Browser-tab icon. |
 | `vite.config.ts` | Configures the development server, base path and build plugins. |
 | `.github/workflows/deploy.yml` | Builds and deploys the app to GitHub Pages. |
-| `scripts/extract_questions.py` | Development utility for extracting questions and diagrams from a supplied PDF. |
 
 ## Understanding the quiz code
 
@@ -117,7 +116,7 @@ Each question has this shape. This is an illustrative example:
 - The current code expects IDs to be sequential, starting at 1, and in the same order as the JSON list.
 - Changing the number of questions also requires reviewing labels such as “Ultimate 400” and “16 focused sets”.
 
-The source PDF is not included in this repository. The extraction script requires a separately supplied PDF, Python, `pdfplumber` and Pillow. It writes to `app/questions.json` and `public/question-images/`, so review its output before committing it.
+Edit questions directly in `app/questions.json`. Store any new diagrams in `public/question-images/` and use their paths in the question data.
 
 ## Development commands
 
