@@ -156,19 +156,32 @@ export default function Home() {
     );
   }
 
-  function selectOption(index: number) {
-    if (session.checked) return;
-    setSession((current) => ({ ...current, selected: index }));
+  function checkAnswer(selectedAnswer: number) {
+    return selectedAnswer === question.correct;
   }
 
-  function checkAnswer() {
-    if (session.selected === null || session.checked) return;
-    setSession((current) => ({
-      ...current,
-      checked: true,
-      score:
-        current.score + (current.selected === question.correct ? 1 : 0),
-    }));
+  function selectOption(index: number) {
+    const isCorrect = checkAnswer(index);
+
+    setSession((current) => {
+      // Don't mark the same question more than once.
+      if (current.checked) {
+        return current;
+      }
+
+      let newScore = current.score;
+
+      if (isCorrect) {
+        newScore = newScore + 1;
+      }
+
+      return {
+        ...current,
+        selected: index,
+        checked: true,
+        score: newScore,
+      };
+    });
   }
 
   function nextQuestion() {
@@ -426,14 +439,6 @@ export default function Home() {
             )}
 
             <div className="actions">
-              <button
-                className="secondary-button"
-                disabled={session.selected === null || session.checked}
-                onClick={checkAnswer}
-                type="button"
-              >
-                Check answer
-              </button>
               <button
                 className="primary-button"
                 disabled={!session.checked}
