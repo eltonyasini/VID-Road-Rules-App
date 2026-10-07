@@ -441,6 +441,7 @@ export default function Home() {
             <div className="actions">
               <button
                 className="primary-button"
+                style={session.kind === "ultimate" ? { marginInline: "auto" } : undefined}
                 disabled={!session.checked}
                 onClick={nextQuestion}
                 type="button"
