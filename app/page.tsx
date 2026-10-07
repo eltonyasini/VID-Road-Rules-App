@@ -46,25 +46,112 @@ function shuffleIds(ids: number[]) {
   return shuffled;
 }
 
+// Saved browser data can be old or damaged, so check it before using it.
 function isValidSavedSession(value: unknown): value is SavedSession {
-  if (!value || typeof value !== "object") return false;
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+
   const saved = value as Partial<SavedSession>;
-  return (
-    ["menu", "quiz", "results"].includes(saved.phase ?? "") &&
-    Array.isArray(saved.questionIds) &&
-    saved.questionIds.every(
-      (id) => Number.isInteger(id) && id >= 1 && id <= questions.length,
-    ) &&
-    Number.isInteger(saved.current) &&
-    (saved.current ?? -1) >= 0 &&
-    (saved.phase === "menu" || (saved.current ?? 0) < saved.questionIds.length)
-  );
+
+  if (saved.phase !== "menu" && saved.phase !== "quiz" && saved.phase !== "results") {
+    return false;
+  }
+
+  if (saved.kind !== null && saved.kind !== "set" && saved.kind !== "random" && saved.kind !== "ultimate") {
+    return false;
+  }
+
+  if (saved.kind === "set") {
+    if (typeof saved.setNumber !== "number" || !Number.isInteger(saved.setNumber)) {
+      return false;
+    }
+    if (saved.setNumber < 1 || saved.setNumber > setCount) {
+      return false;
+    }
+  } else if (saved.setNumber !== null) {
+    return false;
+  }
+
+  if (!Array.isArray(saved.questionIds)) {
+    return false;
+  }
+
+  // The current app uses IDs 1 to 400 in the same order as the question list.
+  for (const id of saved.questionIds) {
+    if (!Number.isInteger(id) || !questions[id - 1] || questions[id - 1].id !== id) {
+      return false;
+    }
+  }
+
+  if (new Set(saved.questionIds).size !== saved.questionIds.length) {
+    return false;
+  }
+
+  if (typeof saved.current !== "number" || !Number.isInteger(saved.current) || saved.current < 0) {
+    return false;
+  }
+
+  if (typeof saved.checked !== "boolean") {
+    return false;
+  }
+
+  if (typeof saved.score !== "number" || !Number.isInteger(saved.score) || saved.score < 0) {
+    return false;
+  }
+
+  // A menu session should not contain an unfinished quiz.
+  if (saved.phase === "menu") {
+    return saved.kind === null &&
+      saved.questionIds.length === 0 &&
+      saved.current === 0 &&
+      saved.selected === null &&
+      saved.checked === false &&
+      saved.score === 0;
+  }
+
+  if (saved.kind === null || saved.current >= saved.questionIds.length) {
+    return false;
+  }
+
+  const savedQuestion = questions[saved.questionIds[saved.current] - 1];
+
+  if (saved.selected !== null) {
+    if (typeof saved.selected !== "number" || !Number.isInteger(saved.selected)) {
+      return false;
+    }
+    if (saved.selected < 0 || saved.selected >= savedQuestion.options.length) {
+      return false;
+    }
+  }
+
+  if (saved.checked && saved.selected === null) {
+    return false;
+  }
+
+  let answeredCount = saved.current;
+  if (saved.checked) {
+    answeredCount = answeredCount + 1;
+  }
+  if (saved.score > answeredCount) {
+    return false;
+  }
+
+  if (saved.phase === "results") {
+    if (!saved.checked || saved.current !== saved.questionIds.length - 1) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 export default function Home() {
   const [session, setSession] = useState<SavedSession>(emptySession);
   const [ready, setReady] = useState(false);
+  const [saveFailed, setSaveFailed] = useState(false);
 
+  // Load the previous quiz once when the app opens.
   useEffect(() => {
     try {
       const stored = window.localStorage.getItem(storageKey);
@@ -78,9 +165,19 @@ export default function Home() {
     setReady(true);
   }, []);
 
+  // Save after each change, but only after the previous session has loaded.
   useEffect(() => {
-    if (!ready) return;
-    window.localStorage.setItem(storageKey, JSON.stringify(session));
+    if (!ready) {
+      return;
+    }
+
+    try {
+      window.localStorage.setItem(storageKey, JSON.stringify(session));
+      setSaveFailed(false);
+    } catch {
+      // Practice can continue even if the browser cannot save progress.
+      setSaveFailed(true);
+    }
   }, [ready, session]);
 
   const activeQuestions = useMemo(
@@ -93,14 +190,25 @@ export default function Home() {
 
   const question = activeQuestions[session.current] ?? questions[0];
   const total = activeQuestions.length;
-  const progress =
-    session.phase === "results"
-      ? 100
-      : total
-        ? ((session.current + (session.checked ? 1 : 0)) / total) * 100
-        : 0;
-  const percentage = total ? Math.round((session.score / total) * 100) : 0;
+  // "current" is a zero-based index: index 4 means question 5.
+  let answeredCount = session.current;
+  if (session.checked) {
+    answeredCount = answeredCount + 1;
+  }
 
+  let progress = 0;
+  let percentage = 0;
+
+  if (total > 0) {
+    progress = (answeredCount / total) * 100;
+    percentage = Math.round((session.score / total) * 100);
+  }
+
+  if (session.phase === "results") {
+    progress = 100;
+  }
+
+  // Choose the heading for the current quiz mode.
   let modeTitle = "Ultimate 400";
 
   if (session.kind === "set") {
@@ -109,6 +217,7 @@ export default function Home() {
     modeTitle = "Random 25";
   }
 
+  // Every quiz mode starts with a fresh score and the chosen question IDs.
   function beginQuiz(
     kind: QuizKind,
     questionIds: number[],
@@ -154,23 +263,25 @@ export default function Home() {
     return selectedAnswer === question.correct;
   }
 
+  // React gives this update function the latest session.
+  // Returning a new session tells React to refresh the display.
   function selectOption(index: number) {
     const isCorrect = checkAnswer(index);
 
-    setSession((current) => {
+    setSession((previousSession) => {
       // Don't mark the same question more than once.
-      if (current.checked) {
-        return current;
+      if (previousSession.checked) {
+        return previousSession;
       }
 
-      let newScore = current.score;
+      let newScore = previousSession.score;
 
       if (isCorrect) {
         newScore = newScore + 1;
       }
 
       return {
-        ...current,
+        ...previousSession,
         selected: index,
         checked: true,
         score: newScore,
@@ -178,16 +289,17 @@ export default function Home() {
     });
   }
 
+  // Clear the previous answer when moving on, or show the final results.
   function nextQuestion() {
     if (!session.checked) return;
     if (session.current === total - 1) {
-      setSession((current) => ({ ...current, phase: "results" }));
+      setSession((previousSession) => ({ ...previousSession, phase: "results" }));
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
-    setSession((current) => ({
-      ...current,
-      current: current.current + 1,
+    setSession((previousSession) => ({
+      ...previousSession,
+      current: previousSession.current + 1,
       selected: null,
       checked: false,
     }));
@@ -199,8 +311,8 @@ export default function Home() {
       startRandom();
       return;
     }
-    setSession((current) => ({
-      ...current,
+    setSession((previousSession) => ({
+      ...previousSession,
       phase: "quiz",
       current: 0,
       selected: null,
@@ -378,7 +490,11 @@ export default function Home() {
         />
       )}
 
-      <p className="footer-note">Your current quiz is saved on this device.</p>
+      <p className="footer-note" role="status">
+        {saveFailed
+          ? "Progress could not be saved. You can keep practising, but reloading may lose your latest answers."
+          : "Your current quiz is saved on this device."}
+      </p>
     </main>
   );
 }

@@ -21,6 +21,7 @@ type QuestionCardProps = {
 };
 
 export default function QuestionCard(props: QuestionCardProps) {
+  // The page owns the quiz state; this component displays the supplied values.
   const question = props.question;
 
   return (
@@ -55,14 +56,18 @@ export default function QuestionCard(props: QuestionCardProps) {
             const isCorrect = props.checked && question.correct === index;
             const isIncorrect =
               props.checked && isSelected && question.correct !== index;
-            const optionClass = [
-              "option",
-              isSelected ? "selected" : "",
-              isCorrect ? "correct" : "",
-              isIncorrect ? "incorrect" : "",
-            ]
-              .filter(Boolean)
-              .join(" ");
+            // Keep "option" for the base style, then add the answer colours.
+            let optionClass = "option";
+
+            if (isSelected) {
+              optionClass = optionClass + " selected";
+            }
+            if (isCorrect) {
+              optionClass = optionClass + " correct";
+            }
+            if (isIncorrect) {
+              optionClass = optionClass + " incorrect";
+            }
 
             return (
               <button
