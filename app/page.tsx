@@ -101,12 +101,13 @@ export default function Home() {
         : 0;
   const percentage = total ? Math.round((session.score / total) * 100) : 0;
 
-  const modeTitle =
-    session.kind === "set"
-      ? `Set ${session.setNumber}`
-      : session.kind === "random"
-        ? "Random 25"
-        : "Ultimate 400";
+  let modeTitle = "Ultimate 400";
+
+  if (session.kind === "set") {
+    modeTitle = `Set ${session.setNumber}`;
+  } else if (session.kind === "random") {
+    modeTitle = "Random 25";
+  }
 
   function beginQuiz(
     kind: QuizKind,
