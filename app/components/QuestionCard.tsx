@@ -1,5 +1,3 @@
-"use client";
-
 export type Question = {
   id: number;
   question: string;
@@ -15,7 +13,6 @@ type QuestionCardProps = {
   total: number;
   selected: number | null;
   checked: boolean;
-  isUltimate: boolean;
   onSelectOption: (index: number) => void;
   onNextQuestion: () => void;
 };

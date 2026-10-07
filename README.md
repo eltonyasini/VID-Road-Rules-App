@@ -58,7 +58,7 @@ http://localhost:5173/VID-Road-Rules-App/
 
 Press **Ctrl + C** in the terminal to stop it. On later launches, run `npm run dev` again.
 
-Windows users can also double-click `START-WINDOWS.bat`. It installs packages with `npm install` if needed, then starts the development server.
+Windows users can also double-click `START-WINDOWS.bat`. It installs packages with `npm ci` if needed, then starts the development server.
 
 ## Where the code lives
 
@@ -69,7 +69,8 @@ Windows users can also double-click `START-WINDOWS.bat`. It installs packages wi
 | `app/hooks/usePreloadImages.ts` | Loads the current image and preloads the next two image questions. |
 | `app/questions.json` | Stores the question text, answer options, correct answers and image paths. |
 | `app/globals.css` | Controls colours, spacing, layouts and responsive styles. |
-| `app/layout.tsx` | Provides the outer page layout, fonts and metadata. |
+| `index.html` | Provides the HTML page, title, description and browser-tab icon. |
+| `src/main.tsx` | Starts React and displays the main page. |
 | `public/question-images/` | Contains the road diagrams. |
 | `public/favicon.svg` | Browser-tab icon. |
 | `vite.config.ts` | Configures the development server, base path and build plugins. |
@@ -124,17 +125,16 @@ The source PDF is not included in this repository. The extraction script require
 | --- | --- |
 | `npm ci` | Install the exact dependencies recorded in the lockfile. |
 | `npm run dev` | Start the development server. |
-| `npm run build` | Create a production build using Vinext. |
-| `npm start` | Serve the production build using Vinext. |
-| `npm run lint` | Run the configured ESLint checks. |
-| `npm test` | Build the project and run the existing rendered-HTML test. |
+| `npm run build` | Check TypeScript and create the production site in `dist/`. |
+| `npm run preview` | Preview the production build locally. |
+| `npm run check` | Check TypeScript for errors without building. |
 
-The existing test checks development-preview metadata. It is not a full test suite for scoring, quiz navigation or saved progress.
+After quiz changes, manually check correct and incorrect answers, Next, results, retry, exit confirmation and saved progress in all three modes. Check image preloading too.
 
 ## Deployment and current tooling
 
-Pushing to `main` triggers the GitHub Pages workflow. It installs dependencies, runs `npm run build`, and deploys `dist/client`. Changes appear on the live site after the workflow finishes successfully.
+Pushing to `main` triggers the GitHub Pages workflow. It installs dependencies, runs `npm run build`, and deploys `dist`. Changes appear on the live site after the workflow finishes successfully.
 
-The interface uses **React and TypeScript**, with CSS for styling. The current build still uses **Vite, Vinext, Next-related packages and Cloudflare tooling** inherited from the starter project.
+The interface uses **React and TypeScript**, with plain CSS for styling and **Vite** for development and production builds. The quiz runs entirely in the browser; no server or database is required.
 
-The quiz saves progress in the browser and does not use a database. Some starter documentation and scripts describe optional infrastructure rather than the current GitHub Pages workflow. Build simplification is a separate future change.
+Keep functions small, use descriptive names and add comments where the purpose is not obvious. The menu and quiz logic stay in `app/page.tsx`; the question display and preloading logic have their own files.

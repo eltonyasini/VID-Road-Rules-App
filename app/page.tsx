@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useMemo, useState } from "react";
 import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
@@ -488,7 +486,6 @@ export default function Home() {
           total={total}
           selected={session.selected}
           checked={session.checked}
-          isUltimate={session.kind === "ultimate"}
           onSelectOption={selectOption}
           onNextQuestion={nextQuestion}
         />
