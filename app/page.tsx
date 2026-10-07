@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
+import usePreloadImages from "./hooks/usePreloadImages";
 
 type QuizKind = "set" | "random" | "ultimate";
 type Phase = "menu" | "quiz" | "results";
@@ -187,6 +188,9 @@ export default function Home() {
         .filter((question): question is Question => Boolean(question)),
     [session.questionIds],
   );
+
+  // Keep image-loading behaviour in its own file.
+  usePreloadImages(activeQuestions, session.current, ready && session.phase === "quiz");
 
   const question = activeQuestions[session.current] ?? questions[0];
   const total = activeQuestions.length;
