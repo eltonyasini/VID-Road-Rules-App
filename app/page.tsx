@@ -2,14 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import questionsData from "./questions.json";
-
-type Question = {
-  id: number;
-  question: string;
-  options: string[];
-  correct: number;
-  image: string | null;
-};
+import QuestionCard, { type Question } from "./components/QuestionCard";
 
 type QuizKind = "set" | "random" | "ultimate";
 type Phase = "menu" | "quiz" | "results";
@@ -372,102 +365,16 @@ export default function Home() {
           </div>
         </section>
       ) : (
-        <article className="question-card" aria-labelledby="question-heading">
-          <div className="card-topline">
-            <span>Question {session.current + 1}</span>
-            <span>
-              {question.image ? "Visual question" : "Road rule"} · Source {question.id}
-            </span>
-          </div>
-
-          {question.image && (
-            <div className="image-stage">
-              <img
-                src={`${import.meta.env.BASE_URL}${question.image?.replace(/^\/+/, "")}`}
-                alt={`Road diagram for question ${question.id}`}
-              />
-            </div>
-          )}
-
-          <div className="question-content">
-            <p className="question-kicker">Choose the correct answer</p>
-            <h2 id="question-heading">{question.question}</h2>
-
-            <div
-              className="options"
-              role="radiogroup"
-              aria-labelledby="question-heading"
-            >
-              {question.options.map((option, index) => {
-                const isSelected = session.selected === index;
-                const isCorrect = session.checked && question.correct === index;
-                const isIncorrect =
-                  session.checked && isSelected && question.correct !== index;
-                const optionClass = [
-                  "option",
-                  isSelected ? "selected" : "",
-                  isCorrect ? "correct" : "",
-                  isIncorrect ? "incorrect" : "",
-                ]
-                  .filter(Boolean)
-                  .join(" ");
-
-                return (
-                  <button
-                    aria-checked={isSelected}
-                    className={optionClass}
-                    key={`${question.id}-${index}`}
-                    onClick={() => selectOption(index)}
-                    role="radio"
-                    type="button"
-                  >
-                    <span className="option-letter">
-                      {String.fromCharCode(65 + index)}
-                    </span>
-                    <span className="option-text">{option}</span>
-                    {isCorrect && <span className="answer-mark">✓</span>}
-                    {isIncorrect && <span className="answer-mark">×</span>}
-                  </button>
-                );
-              })}
-            </div>
-
-            {session.checked && (
-              <div
-                className={`feedback ${
-                  session.selected === question.correct ? "success" : "retry"
-                }`}
-                role="status"
-              >
-                <strong>
-                  {session.selected === question.correct
-                    ? "Correct!"
-                    : "Not quite."}
-                </strong>
-                <span>
-                  {session.selected === question.correct
-                    ? " You chose the right answer."
-                    : ` The correct answer is ${String.fromCharCode(
-                        65 + question.correct,
-                      )}.`}
-                </span>
-              </div>
-            )}
-
-            <div className="actions">
-              <button
-                className="primary-button"
-                style={session.kind === "ultimate" ? { marginInline: "auto", width: "100%", maxWidth: "360px" } : undefined}
-                disabled={!session.checked}
-                onClick={nextQuestion}
-                type="button"
-              >
-                {session.current === total - 1 ? "See results" : "Next card"}
-                <span aria-hidden="true">→</span>
-              </button>
-            </div>
-          </div>
-        </article>
+        <QuestionCard
+          question={question}
+          questionNumber={session.current + 1}
+          total={total}
+          selected={session.selected}
+          checked={session.checked}
+          isUltimate={session.kind === "ultimate"}
+          onSelectOption={selectOption}
+          onNextQuestion={nextQuestion}
+        />
       )}
 
       <p className="footer-note">Your current quiz is saved on this device.</p>
