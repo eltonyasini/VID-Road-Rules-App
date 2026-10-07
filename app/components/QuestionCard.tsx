@@ -114,7 +114,7 @@ export default function QuestionCard(props: QuestionCardProps) {
         <div className="actions">
           <button
             className="primary-button"
-            style={props.isUltimate ? { marginInline: "auto", width: "100%", maxWidth: "360px" } : undefined}
+            style={{ marginInline: "auto", width: "100%", maxWidth: "360px" }}
             disabled={!props.checked}
             onClick={props.onNextQuestion}
             type="button"
