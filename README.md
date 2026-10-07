@@ -15,12 +15,13 @@ A browser app for practising 400 Zimbabwe VID road-rule questions, with road dia
 ## How practice works
 
 1. Choose a quiz mode.
-2. Click an answer to check it immediately.
-3. A correct answer turns green. A wrong answer turns red, and the correct option is highlighted in green.
-4. Click **Next card** when you are ready.
-5. After the last question, select **See results** to view your score.
+2. Click an answer to save your choice and move straight to the next question.
+3. Answers and the running score stay hidden during the quiz.
+4. Sets and Random 25 finish after all 25 answers. Ultimate 400 also offers **Done** after your first answer, so you can finish early.
+5. Results show your score out of the questions you answered. Unanswered questions are not counted as wrong.
+6. Select **Review answers** to see all your choices, or **Review mistakes** to see only incorrect choices and their correct answers.
 
-An answer can only be marked once per question. Retrying a set or Ultimate 400 starts the same questions again; retrying Random 25 creates a fresh selection.
+Retrying a set or Ultimate 400 clears your answer history and starts the same questions again. Retrying Random 25 creates a fresh selection. There is no Next button; rapid double-clicks are ignored to avoid accidentally answering another question.
 
 The app preloads the next two questions that contain images, skipping text-only questions. This helps upcoming diagrams appear faster without adding a fixed delay. Loading speed still depends on your connection and browser.
 
@@ -65,7 +66,9 @@ Windows users can also double-click `START-WINDOWS.bat`. It installs packages wi
 | File or folder | Responsibility |
 | --- | --- |
 | `app/page.tsx` | Keeps quiz state, displays the menu and results, checks answers, manages navigation and saves progress. |
-| `app/components/QuestionCard.tsx` | Displays the current question, diagram, answer options, feedback and Next button. |
+| `app/components/QuestionCard.tsx` | Displays the question and calls the page when an answer is clicked. |
+| `app/components/QuizResults.tsx` | Displays the final score and optional answer or mistake review. |
+| `app/quizSession.ts` | Defines saved sessions, records answers, counts correct answers and validates restored data. |
 | `app/hooks/usePreloadImages.ts` | Loads the current image and preloads the next two image questions. |
 | `app/questions.json` | Stores the question text, answer options, correct answers and image paths. |
 | `app/globals.css` | Controls colours, spacing, layouts and responsive styles. |
@@ -82,20 +85,19 @@ The main page stores a `session` object:
 
 | Field | Meaning |
 | --- | --- |
-| `phase` | Which screen is showing: menu, quiz or results. |
-| `kind` | Which quiz mode is active. |
-| `setNumber` | The selected set number, when practising a set. |
-| `questionIds` | The questions included in this quiz, in their display order. |
-| `current` | The current question's position, starting at zero. |
-| `selected` | The chosen option's position, or `null` before choosing. |
-| `checked` | Whether the current answer has been marked. |
-| `score` | The number of correct answers so far. |
+| `phase` | Menu, quiz or results. |
+| `kind` | Set, random or ultimate mode. |
+| `setNumber` | The selected set number, if applicable. |
+| `questionIds` | The questions included in this quiz, in display order. |
+| `answers` | Each answered question's ID and the selected option's index. |
 
-`selectOption()` calls `checkAnswer()`, then updates the session. React redraws the relevant parts of the screen using those new values.
+`selectOption()` calls `recordAnswer()`, which saves the choice. The number of saved answers identifies the next question. The final answer switches the session to results; `finishQuiz()` allows Ultimate 400 to finish early.
 
-`QuestionCard` receives information and click functions from the page through **props**. It displays the question and calls those functions when you click. Scoring and saved progress stay in the page.
+`QuestionCard` receives the current question and click function through **props**. `QuizResults` receives the saved answers and calculates the score with `countCorrectAnswers()`. Its review buttons reveal the selected and correct answers.
 
-The preloading hook is called from the page, but its image-loading logic stays in its own file.
+Saved sessions use format v3. Older v2 sessions did not retain answer history, so the menu asks users with older unfinished quizzes to start again. The old browser entry is left untouched.
+
+The preloading hook follows the active question order and remains in its own file.
 
 ## Question data
 
@@ -127,8 +129,9 @@ Edit questions directly in `app/questions.json`. Store any new diagrams in `publ
 | `npm run build` | Check TypeScript and create the production site in `dist/`. |
 | `npm run preview` | Preview the production build locally. |
 | `npm run check` | Check TypeScript for errors without building. |
+| `npm test` | Check quiz completion, scoring, early finishing and saved-answer validation. |
 
-After quiz changes, manually check correct and incorrect answers, Next, results, retry, exit confirmation and saved progress in all three modes. Check image preloading too.
+After quiz changes, manually check correct and incorrect answers, automatic advancement, results, answer review, retry, exit confirmation and saved progress in all three modes. Check image preloading too.
 
 ## Deployment and current tooling
 
@@ -136,4 +139,4 @@ Pushing to `main` triggers the GitHub Pages workflow. It installs dependencies, 
 
 The interface uses **React and TypeScript**, with plain CSS for styling and **Vite** for development and production builds. The quiz runs entirely in the browser; no server or database is required.
 
-Keep functions small, use descriptive names and add comments where the purpose is not obvious. The menu and quiz logic stay in `app/page.tsx`; the question display and preloading logic have their own files.
+Keep functions small, use descriptive names and add comments where the purpose is not obvious. The main page connects the menu, questions and results. Session helpers, question display, results display and preloading have their own files.

@@ -10,7 +10,8 @@
     "dev": "vite",
     "check": "tsc --noEmit",
     "build": "npm run check && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --test tests/quiz-session.test.mjs"
   },
   "dependencies": {
     "react": "19.2.6",

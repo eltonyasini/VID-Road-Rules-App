@@ -1,37 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
 import usePreloadImages from "./hooks/usePreloadImages";
-
-type QuizKind = "set" | "random" | "ultimate";
-type Phase = "menu" | "quiz" | "results";
-
-type SavedSession = {
-  phase: Phase;
-  kind: QuizKind | null;
-  setNumber: number | null;
-  questionIds: number[];
-  current: number;
-  selected: number | null;
-  checked: boolean;
-  score: number;
-};
+import QuizResults from "./components/QuizResults";
+import { emptySession, isValidSavedSession, recordAnswer, finishQuiz, type QuizKind, type SavedSession } from "./quizSession";
 
 const questions = questionsData as Question[];
-const storageKey = "vid-question-cards-session-v2";
+const storageKey = "vid-question-cards-session-v3";
 const setSize = 25;
 const setCount = Math.ceil(questions.length / setSize);
-
-const emptySession: SavedSession = {
-  phase: "menu",
-  kind: null,
-  setNumber: null,
-  questionIds: [],
-  current: 0,
-  selected: null,
-  checked: false,
-  score: 0,
-};
 
 function shuffleIds(ids: number[]) {
   const shuffled = [...ids];
@@ -45,110 +22,12 @@ function shuffleIds(ids: number[]) {
   return shuffled;
 }
 
-// Saved browser data can be old or damaged, so check it before using it.
-function isValidSavedSession(value: unknown): value is SavedSession {
-  if (!value || typeof value !== "object") {
-    return false;
-  }
-
-  const saved = value as Partial<SavedSession>;
-
-  if (saved.phase !== "menu" && saved.phase !== "quiz" && saved.phase !== "results") {
-    return false;
-  }
-
-  if (saved.kind !== null && saved.kind !== "set" && saved.kind !== "random" && saved.kind !== "ultimate") {
-    return false;
-  }
-
-  if (saved.kind === "set") {
-    if (typeof saved.setNumber !== "number" || !Number.isInteger(saved.setNumber)) {
-      return false;
-    }
-    if (saved.setNumber < 1 || saved.setNumber > setCount) {
-      return false;
-    }
-  } else if (saved.setNumber !== null) {
-    return false;
-  }
-
-  if (!Array.isArray(saved.questionIds)) {
-    return false;
-  }
-
-  // The current app uses IDs 1 to 400 in the same order as the question list.
-  for (const id of saved.questionIds) {
-    if (!Number.isInteger(id) || !questions[id - 1] || questions[id - 1].id !== id) {
-      return false;
-    }
-  }
-
-  if (new Set(saved.questionIds).size !== saved.questionIds.length) {
-    return false;
-  }
-
-  if (typeof saved.current !== "number" || !Number.isInteger(saved.current) || saved.current < 0) {
-    return false;
-  }
-
-  if (typeof saved.checked !== "boolean") {
-    return false;
-  }
-
-  if (typeof saved.score !== "number" || !Number.isInteger(saved.score) || saved.score < 0) {
-    return false;
-  }
-
-  // A menu session should not contain an unfinished quiz.
-  if (saved.phase === "menu") {
-    return saved.kind === null &&
-      saved.questionIds.length === 0 &&
-      saved.current === 0 &&
-      saved.selected === null &&
-      saved.checked === false &&
-      saved.score === 0;
-  }
-
-  if (saved.kind === null || saved.current >= saved.questionIds.length) {
-    return false;
-  }
-
-  const savedQuestion = questions[saved.questionIds[saved.current] - 1];
-
-  if (saved.selected !== null) {
-    if (typeof saved.selected !== "number" || !Number.isInteger(saved.selected)) {
-      return false;
-    }
-    if (saved.selected < 0 || saved.selected >= savedQuestion.options.length) {
-      return false;
-    }
-  }
-
-  if (saved.checked && saved.selected === null) {
-    return false;
-  }
-
-  let answeredCount = saved.current;
-  if (saved.checked) {
-    answeredCount = answeredCount + 1;
-  }
-  if (saved.score > answeredCount) {
-    return false;
-  }
-
-  if (saved.phase === "results") {
-    if (!saved.checked || saved.current !== saved.questionIds.length - 1) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
 export default function Home() {
   const [session, setSession] = useState<SavedSession>(emptySession);
   const [ready, setReady] = useState(false);
   const [saveFailed, setSaveFailed] = useState(false);
+  const [formatNotice, setFormatNotice] = useState(false);
+  const lastAnswerTime = useRef(0);
 
   // Load the previous quiz once when the app opens.
   useEffect(() => {
@@ -156,7 +35,11 @@ export default function Home() {
       const stored = window.localStorage.getItem(storageKey);
       if (stored) {
         const parsed = JSON.parse(stored) as unknown;
-        if (isValidSavedSession(parsed)) setSession(parsed);
+        if (isValidSavedSession(parsed, questions)) setSession(parsed);
+      } else {
+        // The old format did not save answer history, so it cannot be reviewed.
+        const oldSaved = window.localStorage.getItem("vid-question-cards-session-v2");
+        if (oldSaved && JSON.parse(oldSaved).phase !== "menu") setFormatNotice(true);
       }
     } catch {
       // A blocked or malformed local session should never stop practice.
@@ -187,28 +70,13 @@ export default function Home() {
     [session.questionIds],
   );
 
-  // Keep image-loading behaviour in its own file.
-  usePreloadImages(activeQuestions, session.current, ready && session.phase === "quiz");
-
-  const question = activeQuestions[session.current] ?? questions[0];
+  const answeredCount = session.answers.length;
   const total = activeQuestions.length;
-  // "current" is a zero-based index: index 4 means question 5.
-  let answeredCount = session.current;
-  if (session.checked) {
-    answeredCount = answeredCount + 1;
-  }
+  const question = activeQuestions[answeredCount] ?? questions[0];
+  usePreloadImages(activeQuestions, answeredCount, ready && session.phase === "quiz");
 
   let progress = 0;
-  let percentage = 0;
-
-  if (total > 0) {
-    progress = (answeredCount / total) * 100;
-    percentage = Math.round((session.score / total) * 100);
-  }
-
-  if (session.phase === "results") {
-    progress = 100;
-  }
+  if (total > 0) progress = (answeredCount / total) * 100;
 
   // Choose the heading for the current quiz mode.
   let modeTitle = "Ultimate 400";
@@ -225,15 +93,14 @@ export default function Home() {
     questionIds: number[],
     setNumber: number | null = null,
   ) {
+    setFormatNotice(false);
+    lastAnswerTime.current = 0;
     setSession({
       phase: "quiz",
       kind,
       setNumber,
       questionIds,
-      current: 0,
-      selected: null,
-      checked: false,
-      score: 0,
+      answers: [],
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -261,50 +128,18 @@ export default function Home() {
     );
   }
 
-  function checkAnswer(selectedAnswer: number) {
-    return selectedAnswer === question.correct;
-  }
-
-  // React gives this update function the latest session.
-  // Returning a new session tells React to refresh the display.
   function selectOption(index: number) {
-    const isCorrect = checkAnswer(index);
+    // A quick double-click must not answer the following question by accident.
+    const now = Date.now();
+    if (now - lastAnswerTime.current < 300) return;
+    lastAnswerTime.current = now;
 
-    setSession((previousSession) => {
-      // Don't mark the same question more than once.
-      if (previousSession.checked) {
-        return previousSession;
-      }
-
-      let newScore = previousSession.score;
-
-      if (isCorrect) {
-        newScore = newScore + 1;
-      }
-
-      return {
-        ...previousSession,
-        selected: index,
-        checked: true,
-        score: newScore,
-      };
-    });
+    setSession((previousSession) => recordAnswer(previousSession, question.id, index));
+    window.scrollTo({ top: 0, behavior: "instant" });
   }
 
-  // Clear the previous answer when moving on, or show the final results.
-  function nextQuestion() {
-    if (!session.checked) return;
-    if (session.current === total - 1) {
-      setSession((previousSession) => ({ ...previousSession, phase: "results" }));
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      return;
-    }
-    setSession((previousSession) => ({
-      ...previousSession,
-      current: previousSession.current + 1,
-      selected: null,
-      checked: false,
-    }));
+  function doneQuiz() {
+    setSession((previousSession) => finishQuiz(previousSession));
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
@@ -313,15 +148,7 @@ export default function Home() {
       startRandom();
       return;
     }
-    setSession((previousSession) => ({
-      ...previousSession,
-      phase: "quiz",
-      current: 0,
-      selected: null,
-      checked: false,
-      score: 0,
-    }));
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (session.kind) beginQuiz(session.kind, session.questionIds, session.setNumber);
   }
 
   function confirmExit() {
@@ -365,6 +192,8 @@ export default function Home() {
             or take on every question from the PDF.
           </p>
         </header>
+
+        {formatNotice && <p role="status">The quiz format has changed. Please start a new quiz so all your answers can be saved for review.</p>}
 
         <section className="sets-panel" aria-labelledby="sets-heading">
           <div className="section-heading">
@@ -442,19 +271,24 @@ export default function Home() {
           <p className="eyebrow">VID PRACTICE · {modeTitle.toUpperCase()}</p>
           <h1>Road Rules</h1>
         </div>
-        <button className="text-button" onClick={confirmExit} type="button">
-          Exit quiz
-        </button>
+        <div className="quiz-controls">
+          {session.phase === "quiz" && session.kind === "ultimate" && (
+            <button className="primary-button done-button" onClick={doneQuiz} disabled={answeredCount === 0} type="button">Done</button>
+          )}
+          <button className="text-button" onClick={confirmExit} type="button">
+            {session.phase === "results" ? "Back to menu" : "Exit quiz"}
+          </button>
+        </div>
       </header>
 
       <section className="progress-section" aria-label="Quiz progress">
         <div className="progress-copy">
           <span>
             {session.phase === "results"
-              ? "Complete"
-              : `Question ${session.current + 1} of ${total}`}
+              ? "Finished"
+              : `Question ${answeredCount + 1} of ${total}`}
           </span>
-          <span>{session.score} correct</span>
+          <span>{answeredCount} answered</span>
         </div>
         <div className="progress-track" aria-hidden="true">
           <div className="progress-fill" style={{ width: `${progress}%` }} />
@@ -462,32 +296,21 @@ export default function Home() {
       </section>
 
       {session.phase === "results" ? (
-        <section className="result-card" aria-labelledby="result-heading">
-          <div className="result-mark">✓</div>
-          <p className="eyebrow">{modeTitle.toUpperCase()} COMPLETE</p>
-          <h2 id="result-heading">You finished all {total} questions.</h2>
-          <p className="result-score">
-            {session.score} / {total}
-          </p>
-          <p className="result-percentage">Final score: {percentage}%</p>
-          <div className="result-actions">
-            <button className="secondary-button" onClick={goToMenu}>
-              Choose another mode
-            </button>
-            <button className="primary-button restart-button" onClick={retryQuiz}>
-              {session.kind === "random" ? "New random 25" : "Try again"}
-            </button>
-          </div>
-        </section>
+        <QuizResults
+          modeTitle={modeTitle}
+          answers={session.answers}
+          questions={activeQuestions}
+          total={total}
+          isRandom={session.kind === "random"}
+          onRetry={retryQuiz}
+          onGoToMenu={goToMenu}
+        />
       ) : (
         <QuestionCard
           question={question}
-          questionNumber={session.current + 1}
+          questionNumber={answeredCount + 1}
           total={total}
-          selected={session.selected}
-          checked={session.checked}
           onSelectOption={selectOption}
-          onNextQuestion={nextQuestion}
         />
       )}
 

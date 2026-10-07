@@ -799,3 +799,32 @@ h1 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Results stay hidden until a review button is selected. */
+.quiz-controls, .review-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.review-actions { margin-bottom: 24px; }
+.quiz-controls .done-button { width: auto; margin: 0; }
+.answer-review { margin-top: 28px; }
+.review-card {
+  margin-top: 16px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+}
+.review-card h3 { line-height: 1.4; }
+.review-card img { display: block; max-width: 100%; max-height: 240px; margin: 18px auto; }
+.review-answer { padding: 14px; border-radius: 10px; line-height: 1.5; }
+.review-answer.correct { color: #245b32; background: var(--green-soft); }
+.review-answer.incorrect { color: #89372f; background: var(--red-soft); }
+@media (max-width: 640px) {
+  .quiz-topbar { gap: 16px; flex-wrap: wrap; }
+  .quiz-controls { gap: 12px; }
+  .review-actions { width: 100%; }
+}
