@@ -137,4 +137,4 @@ Pushing to `main` triggers the GitHub Pages workflow. It installs dependencies, 
 
 The interface uses **React and TypeScript**, with CSS for styling. The current build still uses **Vite, Vinext, Next-related packages and Cloudflare tooling** inherited from the starter project.
 
-Database scaffolding also remains, but the quiz itself saves progress in the browser and does not use a database. Some starter documentation and scripts describe optional infrastructure rather than the current GitHub Pages workflow. Build simplification is a separate future change.
+The quiz saves progress in the browser and does not use a database. Some starter documentation and scripts describe optional infrastructure rather than the current GitHub Pages workflow. Build simplification is a separate future change.
