@@ -185,7 +185,7 @@ export default function Home() {
     return (
       <main className="app-shell menu-shell">
         <header className="menu-header">
-          <p className="eyebrow">VID PRACTICE</p>
+          <p className="eyebrow">LEARNERS PRACTICE</p>
           <h1>How do you want to practise?</h1>
           <p className="menu-intro">
             Work through the questions in smaller sets, create a random test,
@@ -268,7 +268,7 @@ export default function Home() {
     <main className="app-shell">
       <header className="topbar quiz-topbar">
         <div>
-          <p className="eyebrow">VID PRACTICE · {modeTitle.toUpperCase()}</p>
+          <p className="eyebrow">LEARNERS PRACTICE · {modeTitle.toUpperCase()}</p>
           <h1>Road Rules</h1>
         </div>
         <div className="quiz-controls">

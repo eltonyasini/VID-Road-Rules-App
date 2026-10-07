@@ -1,6 +1,6 @@
-# VID Road Rules Practice
+# Learners Practice
 
-A browser app for practising 400 Zimbabwe VID road-rule questions, with road diagrams, end-of-quiz answer review and saved progress.
+A browser app for practising 400 Zimbabwe road-rule questions, with road diagrams, end-of-quiz answer review and saved progress.
 
 **[Open the app](https://eltonyasini.github.io/VID-Road-Rules-App/)**
 

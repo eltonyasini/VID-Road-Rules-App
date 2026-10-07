@@ -1,5 +1,5 @@
 @echo off
-title VID Road Rules Practice
+title Learners Practice
 
 where node >nul 2>nul
 if errorlevel 1 (
@@ -19,7 +19,7 @@ if not exist node_modules (
   )
 )
 
-echo Starting VID Road Rules Practice...
+echo Starting Learners Practice...
 echo Open the local address shown below in your browser.
 call npm run dev
 pause
