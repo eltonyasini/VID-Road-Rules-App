@@ -1,6 +1,6 @@
 # VID Road Rules Practice
 
-A browser app for practising 400 Zimbabwe VID road-rule questions, with road diagrams, immediate answer feedback and saved progress.
+A browser app for practising 400 Zimbabwe VID road-rule questions, with road diagrams, end-of-quiz answer review and saved progress.
 
 **[Open the app](https://eltonyasini.github.io/VID-Road-Rules-App/)**
 
@@ -19,7 +19,7 @@ A browser app for practising 400 Zimbabwe VID road-rule questions, with road dia
 3. Answers and the running score stay hidden during the quiz.
 4. Sets and Random 25 finish after all 25 answers. Ultimate 400 also offers **Done** after your first answer, so you can finish early.
 5. Results show your score out of the questions you answered. Unanswered questions are not counted as wrong.
-6. Select **Review answers** to see all your choices, or **Review mistakes** to see only incorrect choices and their correct answers.
+6. Select **Review answers** to see all your choices. Tick **Only show mistakes** inside the review to filter out correct answers.
 
 Retrying a set or Ultimate 400 clears your answer history and starts the same questions again. Retrying Random 25 creates a fresh selection. There is no Next button; rapid double-clicks are ignored to avoid accidentally answering another question.
 
@@ -93,7 +93,7 @@ The main page stores a `session` object:
 
 `selectOption()` calls `recordAnswer()`, which saves the choice. The number of saved answers identifies the next question. The final answer switches the session to results; `finishQuiz()` allows Ultimate 400 to finish early.
 
-`QuestionCard` receives the current question and click function through **props**. `QuizResults` receives the saved answers and calculates the score with `countCorrectAnswers()`. Its review buttons reveal the selected and correct answers.
+`QuestionCard` receives the current question and click function through **props**. `QuizResults` receives the saved answers and calculates the score with `countCorrectAnswers()`. Its review button reveals the selected and correct answers.
 
 Saved sessions use format v3. Older v2 sessions did not retain answer history, so the menu asks users with older unfinished quizzes to start again. The old browser entry is left untouched.
 

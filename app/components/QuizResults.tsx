@@ -13,7 +13,8 @@ type QuizResultsProps = {
 };
 
 export default function QuizResults(props: QuizResultsProps) {
-  const [review, setReview] = useState<"none" | "all" | "mistakes">("none");
+  const [showReview, setShowReview] = useState(false);
+  const [onlyMistakes, setOnlyMistakes] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
   const answeredCount = props.answers.length;
   const score = countCorrectAnswers(props.answers, props.questions);
@@ -24,9 +25,8 @@ export default function QuizResults(props: QuizResultsProps) {
     heading.current?.focus({ preventScroll: true });
   }, []);
 
-  function toggleReview(choice: "all" | "mistakes") {
-    if (review === choice) setReview("none");
-    else setReview(choice);
+  function toggleReview() {
+    setShowReview((previousValue) => !previousValue);
   }
 
   return (
@@ -41,22 +41,25 @@ export default function QuizResults(props: QuizResultsProps) {
         <p className="result-percentage">Correct answers: {percentage}%</p>
         {answeredCount < props.total && <p>Unanswered questions are not counted as wrong.</p>}
         <div className="review-actions">
-          <button className="secondary-button" type="button" aria-expanded={review === "all"} aria-controls="answer-review" onClick={() => toggleReview("all")}>Review answers</button>
-          <button className="secondary-button" type="button" aria-expanded={review === "mistakes"} aria-controls="answer-review" onClick={() => toggleReview("mistakes")}>Review mistakes ({answeredCount - score})</button>
+          <button className="secondary-button" type="button" aria-expanded={showReview} aria-controls="answer-review" onClick={toggleReview}>Review answers</button>
         </div>
         <div className="result-actions">
           <button className="secondary-button" type="button" onClick={props.onGoToMenu}>Choose another mode</button>
           <button className="primary-button restart-button" type="button" onClick={props.onRetry}>{props.isRandom ? "New random 25" : "Try again"}</button>
         </div>
       </section>
-      <section id="answer-review" className="answer-review" hidden={review === "none"} aria-labelledby="review-heading">
-        <h2 id="review-heading">{review === "mistakes" ? "Your mistakes" : "Your answers"}</h2>
-        {review === "mistakes" && score === answeredCount && <p>No mistakes—you got every answered question right.</p>}
-        {review !== "none" && props.answers.map((answer, index) => {
+      <section id="answer-review" className="answer-review" hidden={!showReview} aria-labelledby="review-heading">
+        <h2 id="review-heading">Your answers</h2>
+        <label>
+          <input type="checkbox" checked={onlyMistakes} onChange={(event) => setOnlyMistakes(event.target.checked)} />
+          {" "}Only show mistakes ({answeredCount - score})
+        </label>
+        {onlyMistakes && score === answeredCount && <p>No mistakes—you got every answered question right.</p>}
+        {showReview && props.answers.map((answer, index) => {
           const question = props.questions.find((item) => item.id === answer.questionId);
           if (!question) return null;
           const isCorrect = answer.selectedAnswer === question.correct;
-          if (review === "mistakes" && isCorrect) return null;
+          if (onlyMistakes && isCorrect) return null;
           let answerClass = "review-answer incorrect";
           if (isCorrect) answerClass = "review-answer correct";
           return (
