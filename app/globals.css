@@ -828,3 +828,41 @@ h1 {
   .quiz-controls { gap: 12px; }
   .review-actions { width: 100%; }
 }
+
+/* A native modal keeps keyboard focus inside the exit confirmation. */
+.exit-dialog {
+  width: min(480px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: 0 32px 100px rgba(14, 46, 40, .25);
+}
+.exit-dialog::backdrop { background: rgba(14, 34, 29, .62); backdrop-filter: blur(5px); }
+.exit-dialog-content { padding: 28px; }
+.exit-dialog-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.exit-dialog-label { color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .14em; }
+.exit-dialog-close { width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--cream); color: var(--forest); font-size: 25px; cursor: pointer; }
+.exit-dialog-icon { display: grid; place-items: center; width: 64px; height: 64px; margin: 22px 0; border-radius: 20px; background: var(--sage); color: var(--forest); }
+.exit-dialog h2 { margin: 0 0 12px; color: var(--forest); font-size: clamp(28px, 6vw, 36px); letter-spacing: -.04em; }
+.exit-dialog p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+.exit-dialog-progress { margin: 24px 0; padding: 18px; border-radius: 14px; background: var(--cream); font-size: 13px; }
+.exit-dialog-progress strong { color: var(--forest); }
+.exit-dialog-progress span { color: var(--muted); }
+.exit-dialog-track { height: 5px; margin-top: 12px; border-radius: 5px; background: var(--line); overflow: hidden; }
+.exit-dialog-track div { height: 100%; background: var(--forest); border-radius: inherit; }
+.exit-dialog-actions { display: grid; grid-template-columns: 1.5fr 1fr; gap: 12px; }
+.exit-dialog-actions button { min-height: 50px; padding: 12px 16px; border-radius: 12px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.exit-dialog-stay { display: flex; justify-content: center; align-items: center; gap: 10px; border: 1px solid var(--amber); color: var(--forest-dark); background: var(--amber); }
+.exit-dialog-leave { border: 1px solid var(--line); color: var(--forest); background: transparent; }
+.exit-dialog-stay:hover { background: #e8ab39; }
+.exit-dialog-leave:hover, .exit-dialog-close:hover { background: var(--sage); }
+.exit-dialog button:focus-visible { outline: 3px solid var(--forest); outline-offset: 3px; }
+@media (max-width: 380px) {
+  .exit-dialog-content { padding: 22px; }
+  .exit-dialog-actions { grid-template-columns: 1fr; }
+}

@@ -3,6 +3,7 @@ import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
 import usePreloadImages from "./hooks/usePreloadImages";
 import QuizResults from "./components/QuizResults";
+import ExitQuizDialog from "./components/ExitQuizDialog";
 import { emptySession, isValidSavedSession, recordAnswer, finishQuiz, type QuizKind, type SavedSession } from "./quizSession";
 
 const questions = questionsData as Question[];
@@ -24,6 +25,7 @@ function shuffleIds(ids: number[]) {
 
 export default function Home() {
   const [session, setSession] = useState<SavedSession>(emptySession);
+  const [showExitDialog, setShowExitDialog] = useState(false);
   const [ready, setReady] = useState(false);
   const [saveFailed, setSaveFailed] = useState(false);
   const [formatNotice, setFormatNotice] = useState(false);
@@ -158,16 +160,11 @@ export default function Home() {
       return;
     }
 
-    const wantsToExit = window.confirm(
-      "Are you sure you want to exit? Your current quiz progress will be lost.",
-    );
-
-    if (wantsToExit) {
-      goToMenu();
-    }
+    setShowExitDialog(true);
   }
 
   function goToMenu() {
+    setShowExitDialog(false);
     setSession(emptySession);
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
@@ -266,6 +263,10 @@ export default function Home() {
 
   return (
     <main className="app-shell">
+      {showExitDialog && (
+        <ExitQuizDialog answeredCount={answeredCount} total={total}
+          onStay={() => setShowExitDialog(false)} onExit={goToMenu} />
+      )}
       <header className="topbar quiz-topbar">
         <div>
           <p className="eyebrow">LEARNERS PRACTICE · {modeTitle.toUpperCase()}</p>
