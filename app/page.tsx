@@ -7,7 +7,9 @@ import ExitQuizDialog from "./components/ExitQuizDialog";
 import { emptySession, isValidSavedSession, recordAnswer, finishQuiz, type QuizKind, type SavedSession } from "./quizSession";
 
 const questions = questionsData as Question[];
-const storageKey = "vid-question-cards-session-v3";
+const storageKey = "vid-question-cards-session-v4";
+// These questions changed meaning in the licence-code update.
+const revisedQuestionIds = new Set([138, 173, 245, 320]);
 const setSize = 25;
 const setCount = Math.ceil(questions.length / setSize);
 
@@ -39,9 +41,22 @@ export default function Home() {
         const parsed = JSON.parse(stored) as unknown;
         if (isValidSavedSession(parsed, questions)) setSession(parsed);
       } else {
-        // The old format did not save answer history, so it cannot be reviewed.
-        const oldSaved = window.localStorage.getItem("vid-question-cards-session-v2");
-        if (oldSaved && JSON.parse(oldSaved).phase !== "menu") setFormatNotice(true);
+        const previous = window.localStorage.getItem("vid-question-cards-session-v3");
+        if (previous) {
+          const parsed = JSON.parse(previous) as unknown;
+          if (isValidSavedSession(parsed, questions)) {
+            // Do not mark an old answer against a rewritten question.
+            if (parsed.answers.some((answer) => revisedQuestionIds.has(answer.questionId))) {
+              setFormatNotice(true);
+            } else {
+              setSession(parsed);
+            }
+          }
+        } else {
+          // The oldest format did not save answer history for review.
+          const oldSaved = window.localStorage.getItem("vid-question-cards-session-v2");
+          if (oldSaved && JSON.parse(oldSaved).phase !== "menu") setFormatNotice(true);
+        }
       }
     } catch {
       // A blocked or malformed local session should never stop practice.
@@ -190,7 +205,7 @@ export default function Home() {
           </p>
         </header>
 
-        {formatNotice && <p role="status">The quiz format has changed. Please start a new quiz so all your answers can be saved for review.</p>}
+        {formatNotice && <p role="status">The practice questions have been updated. Please start a new quiz so your answers match the current questions.</p>}
 
         <section className="sets-panel" aria-labelledby="sets-heading">
           <div className="section-heading">

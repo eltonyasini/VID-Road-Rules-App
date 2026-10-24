@@ -1508,11 +1508,11 @@
   },
   {
     "id": 138,
-    "question": "At the age of 17 years a person is allowed to drive",
+    "question": "Which licence code covers light motorcycles with an engine capacity not exceeding 125 cc?",
     "options": [
-      "Light motor vehicles only",
-      "Minibuses and light cars",
-      "Both heavy and light provided he/she is a holder of a class two driving licence"
+      "A1",
+      "D",
+      "C"
     ],
     "correct": 0,
     "image": null
@@ -1893,11 +1893,11 @@
   },
   {
     "id": 173,
-    "question": "How many classes of driver's licences do we have in Zimbabwe?",
+    "question": "Which vehicle does licence code B1 cover?",
     "options": [
-      "Five",
-      "Four",
-      "Six"
+      "A motor-powered quadricycle",
+      "A heavy goods truck",
+      "A bus with more than 16 passenger seats"
     ],
     "correct": 0,
     "image": null
@@ -2685,11 +2685,11 @@
   },
   {
     "id": 245,
-    "question": "Holding a class 4 & 5 driver's licence means I am qualified to drive:",
+    "question": "Holding licences for codes B and BÊ means I am qualified to drive:",
     "options": [
-      "Agricultural tractor and small car",
-      "Small car and coupe imp",
-      "Small car and vintage vehicles"
+      "A light motor vehicle and an agricultural tractor",
+      "A motorcycle and a heavy goods truck",
+      "A large bus and a motorcycle"
     ],
     "correct": 0,
     "image": null
@@ -3510,11 +3510,11 @@
   },
   {
     "id": 320,
-    "question": "At the age of 17 years a person can drive motor vehicles classes of",
+    "question": "Which licence code covers goods vehicles with a gross vehicle mass above 3,500 kg but not exceeding 7,500 kg?",
     "options": [
-      "Heavy vehicles",
-      "Light motor vehicles",
-      "Agricultural tractors"
+      "A1",
+      "C1",
+      "D"
     ],
     "correct": 1,
     "image": null

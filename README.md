@@ -140,3 +140,23 @@ Pushing to `main` triggers the GitHub Pages workflow. It installs dependencies, 
 The interface uses **React and TypeScript**, with plain CSS for styling and **Vite** for development and production builds. The quiz runs entirely in the browser; no server or database is required.
 
 Keep functions small, use descriptive names and add comments where the purpose is not obvious. The main page connects the menu, questions and results. Session helpers, question display, results display and preloading have their own files.
+
+
+### Licence-code question update (24 October 2026)
+
+Questions 138, 173, 245 and 320 now use letter-based licence codes instead of
+legacy class numbers or broad age-based wording. IDs and the 400-question total
+are unchanged. B1 is a quadricycle code; BÊ is the tractor code, distinct from BE.
+The former total-number-of-classes question now tests B1 identification instead,
+so it does not rely on simplified charts that omit the tractor code.
+
+Sources checked:
+- Road Traffic (Licensing of Drivers) Regulations, 2023, SI 119/2023, section 2:
+  https://www.veritaszim.net/sites/veritas_d/files/SI%202023-119%20Road%20Traffic%20%28Licensing%20of%20Drivers%29%20Regulations%2C%202023.pdf
+- Ministry of Transport and Infrastructural Development, new driver's licence
+  press statement, 7 June 2023, pages 4–5 (archived copy):
+  https://bigsky.co.zw/wp-content/uploads/New-Drivers-Licence-Press-Statement-7-Jun-2023.pdf
+
+This is a targeted licence-code update, not a full review of all traffic rules.
+Saved v3 sessions migrate to v4 unless they already answered one of the rewritten
+questions; affected sessions restart with an update notice to avoid misleading scores.
