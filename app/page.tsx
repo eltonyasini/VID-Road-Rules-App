@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import ThemeToggle from "./components/ThemeToggle";
 import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
 import usePreloadImages from "./hooks/usePreloadImages";
@@ -196,22 +197,33 @@ export default function Home() {
   if (session.phase === "menu") {
     return (
       <main className="app-shell menu-shell">
+        <div className="brand-bar"><p className="brand"><span>LEARNERS</span> PRACTICE</p><ThemeToggle /></div>
         <header className="menu-header">
-          <p className="eyebrow">LEARNERS PRACTICE</p>
-          <h1>How do you want to practise?</h1>
-          <p className="menu-intro">
-            Work through the questions in smaller sets, create a random test,
-            or take on all 400 questions.
-          </p>
+          <h1>A little practice.<br />More confidence.</h1>
+          <p className="menu-intro">Choose your way to practise.</p>
         </header>
+        <section className="mode-grid" aria-label="Practice modes">
+          <button className="mode-card ultimate-card" onClick={startUltimate} type="button">
+            <span className="mode-tag">Ultimate challenge</span><strong className="mode-count">400</strong>
+            <span className="mode-description">Work through<br />every question.</span><span className="mode-arrow" aria-hidden="true">→</span>
+          </button>
+          <button className="mode-card random-card" onClick={startRandom} type="button">
+            <span className="mode-tag">Random questions</span><strong className="mode-count">25</strong>
+            <span className="mode-description">A fresh mix<br />every time.</span><span className="mode-arrow" aria-hidden="true">→</span>
+          </button>
+          <a className="mode-card practice-card" href="#sets-heading" onClick={() => document.getElementById("sets-heading")?.focus()}>
+            <span className="mode-tag">Practice sets</span><strong className="mode-count">16</strong>
+            <span className="mode-description">Build confidence,<br />one set at a time.</span><span className="mode-arrow" aria-hidden="true">→</span>
+          </a>
+        </section>
 
         {formatNotice && <p role="status">The practice questions have been updated. Please start a new quiz so your answers match the current questions.</p>}
 
         <section className="sets-panel" aria-labelledby="sets-heading">
           <div className="section-heading">
             <div>
-              <p className="section-number">01</p>
-              <h2 id="sets-heading">25-question sets</h2>
+
+              <h2 id="sets-heading" tabIndex={-1}>Pick a practice set</h2>
             </div>
             <p>16 focused sets</p>
           </div>
@@ -240,37 +252,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="challenge-grid" aria-label="Challenge modes">
-          <article className="mode-card random-card">
-            <div className="mode-number">02</div>
-            <div>
-              <p className="mode-tag">MIX IT UP</p>
-              <h2>Random 25</h2>
-              <p>
-                Test yourself with a fresh mix of 25 randomly selected questions.
-              </p>
-            </div>
-            <button className="mode-button random-button" onClick={startRandom}>
-              Randomise 25 <span aria-hidden="true">↻</span>
-            </button>
-          </article>
-
-          <article className="mode-card ultimate-card">
-            <div className="mode-number">03</div>
-            <div>
-              <p className="mode-tag">THE FULL TEST</p>
-              <h2>Ultimate 400</h2>
-              <p>
-                Take every question in the original order and really test
-                yourself.
-              </p>
-            </div>
-            <button className="mode-button ultimate-button" onClick={startUltimate}>
-              Start 400 questions <span aria-hidden="true">→</span>
-            </button>
-          </article>
-        </section>
-
         <p className="footer-note">Choose a mode to begin your practice.</p>
       </main>
     );
@@ -288,6 +269,7 @@ export default function Home() {
           <h1>Road Rules</h1>
         </div>
         <div className="quiz-controls">
+          <ThemeToggle />
           {session.phase === "quiz" && session.kind === "ultimate" && (
             <button className="primary-button done-button" onClick={doneQuiz} disabled={answeredCount === 0} type="button">Done</button>
           )}
