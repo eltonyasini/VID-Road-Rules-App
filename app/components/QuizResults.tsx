@@ -39,6 +39,7 @@ export default function QuizResults(props: QuizResultsProps) {
         </h2>
         <p className="result-score">{score} / {answeredCount}</p>
         <p className="result-percentage">Correct answers: {percentage}%</p>
+        <div className="result-totals"><span><strong>{score}</strong> correct</span><span><strong>{answeredCount - score}</strong> incorrect</span></div>
         {answeredCount < props.total && <p>Unanswered questions are not counted as wrong.</p>}
         <div className="review-actions">
           <button className="secondary-button" type="button" aria-expanded={showReview} aria-controls="answer-review" onClick={toggleReview}>Review answers</button>
