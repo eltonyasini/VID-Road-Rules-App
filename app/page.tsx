@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import OfflineSupport from "./components/OfflineSupport";
 import ThemeToggle from "./components/ThemeToggle";
 import questionsData from "./questions.json";
 import QuestionCard, { type Question } from "./components/QuestionCard";
@@ -252,6 +253,7 @@ export default function Home() {
           </div>
         </section>
 
+        <OfflineSupport />
         <p className="footer-note">Choose a mode to begin your practice.</p>
       </main>
     );

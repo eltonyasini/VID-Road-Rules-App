@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "Learners Practice",
+  "short_name": "Learners",
+  "description": "Practise all 400 road-rule questions, online or offline.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101215",
+  "theme_color": "#0751ed",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

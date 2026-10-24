@@ -148,3 +148,9 @@ h1 { font-size: 32px; letter-spacing: -.04em; margin-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
  *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+.offline-support { margin-top: 28px; padding: 20px; background: var(--tile); border-radius: 16px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.offline-support p { margin-bottom: 12px; }
+.offline-support small { display: block; margin-top: 12px; }
+.offline-support summary { cursor: pointer; color: var(--ink); font-weight: 700; }
+.offline-support details p { margin: 12px 0 0; }

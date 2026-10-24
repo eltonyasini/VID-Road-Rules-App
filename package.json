@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vite",
     "check": "tsc --noEmit",
-    "build": "npm run check && vite build",
+    "build": "npm run check && vite build && node scripts/build-pwa.mjs",
     "preview": "vite preview",
     "test": "node --experimental-strip-types --test tests/quiz-session.test.mjs"
   },
